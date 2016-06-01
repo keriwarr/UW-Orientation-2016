@@ -1,0 +1,16 @@
+# Python Files
+*.py[co]
+
+# Database Files
+*.sqlite
+*.sqlite[123]
+
+# Emacs Temporary Files
+*~
+
+# Vim Temporary Files
+*.swp
+
+# Per Deployment and Secret Files
+secret_key.txt
+.env.json
