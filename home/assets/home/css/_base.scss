@@ -1,0 +1,49 @@
+// $small-only: "screen and (max-width: 39.9375em)";
+// $medium: "screen and (min-width: 40em)";
+// $medium-only: "screen and (min-width: 40em) and (max-width: 63.9375em)";
+// $large: "screen and (min-width: 64em)";
+// $large-only: "screen and (min-width: 64em) and (max-width: 74.9375em)";
+
+body {
+  font-family: "Georgia", "Times New Roman", times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "trajan-pro-3", "Georgia", "Times New Roman", times, serif;
+  // letter-spacing: -0.1rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.muted {
+  opacity: 0.6;
+}
+
+#main {
+  margin-top: $global-margin;
+}
+
+#navigation-container {
+  z-index: 1;
+}
+
+#navigation-bar {
+  > .top-bar {
+    text-align: center
+  }
+}
+
+#navigation-menu {
+  display: inline-block;
+}
+
+.navigation-menu-social,
+.menu > li > a.navigation-menu-social {
+  display: inline-block;
+  @media #{$medium-up} {
+    display: block;
+    float: left;
+  }
+}

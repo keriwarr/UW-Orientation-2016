@@ -1,0 +1,55 @@
+{% load staticfiles compress %}
+
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.twitter_username %}
+          <li>
+            {{ site.twitter_username }}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://use.typekit.net/cxu4lev.js"></script>
+<script>try{Typekit.load({async:true});}catch(e){}</script>
+<script src="{% static 'vendor/foundation-sites/dist/foundation.js' %}"></script>
+
+<!-- vendor assets -->
+{% compress js %}
+<script src="{% static 'vendor/codebird-js/codebird.js' %}"></script>
+<script src="{% static 'vendor/doT/doT.min.js' %}"></script>
+<script src="{% static 'vendor/moment/moment.js' %}"></script>
+<script src="{% static 'vendor/moment/locale/en-ca.js' %}"></script>
+<script src="{% static 'vendor/social-feed/js/jquery.socialfeed.js' %}"></script>
+{% endcompress %}
+
+<!--- main JS -->
+{% compress js %}
+<script src="{% static 'home/js/main.js' %}"></script>
+{% endcompress %}
+
+<script>$(document).foundation();</script>
