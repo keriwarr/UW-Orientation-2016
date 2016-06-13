@@ -1,0 +1,19 @@
+{
+  "name": "UW-Orientation-2016",
+  "authors": [
+    "nfrasser <nfrasser@uwaterloo.ca>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://orientation.math.uwaterloo.ca",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

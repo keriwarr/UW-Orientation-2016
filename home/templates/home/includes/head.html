@@ -1,0 +1,15 @@
+{% load staticfiles compress %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+  <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
+
+  {% compress css %}
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'home/css/vendor.scss' %}">
+  <link rel="stylesheet" type="text/x-scss" href="{% static 'home/css/main.scss' %}">
+  {% endcompress %}
+</head>
