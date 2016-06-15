@@ -1,3 +1,126 @@
 #default-header {
+  position: relative;
+  overflow: hidden;
   margin-bottom: 0;
+  padding: 0;
+}
+
+#default-header,
+#default-header-bg-container,
+#default-header-logo-container {
+  height: 512px;
+  height: 100vw;
+  max-height: 512px;
+  max-height: 75vh;
+
+  @media #{$medium-up} {
+    height: 100vw;
+    max-height: 100vh;
+  }
+}
+
+#default-header-bg-container,
+#default-header-logo-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease;
+}
+
+#default-header-bg-container {
+  background-image: url("/assets/home/img/map.jpg");
+  background-size: $map-width * .75 $map-height * .75;
+  background-position: 50% 25%;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+
+  .stage-1 & {
+    background-size: $map-width * .5 $map-height * .5;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  @media #{$medium-up} {
+    background-size: $map-width $map-height;
+    background-position: 50% 40%;
+
+    .stage-1 & {
+      background-size: $map-width * .75 $map-height * .75;
+    }
+  }
+}
+
+#default-header-logo-container {
+  top: 0;
+  opacity: 0;
+
+  .stage-1 & {
+    opacity: 1;
+  }
+
+  .stage-2 & {
+    top: -12rem;
+  }
+
+  @media #{$medium-up} {
+    max-height: 1024px;
+    max-height: 100vh;
+    .stage-2 & {
+      top: -16rem;
+    }
+  }
+
+  @media #{$large-up} {
+    .stage-2 & {
+      top: 0;
+    }
+  }
+}
+
+#default-logo {
+  padding: 2rem;
+  height: inherit;
+  max-height: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+  transform: rotate3d(0, 95, 85, -320deg);
+
+  .stage-1 & {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+
+  .stage-2 & {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media #{$medium-up} {
+    padding: 4rem;
+  }
+
+  @media #{$large-up} {
+    .stage-2 & {
+      height: 60%;
+    }
+  }
+}
+
+#default-header-title {
+  font-size: 2.5rem;
+  line-height: 1;
+  @media #{$medium-up} {
+    font-size: 3.5rem;
+  }
+}
+
+#default-header-subtitle {
+  font-size: 1.5rem;
+  line-height: 1;
+
+  @media #{$medium-up} {
+    font-size: 2rem;
+  }
 }
