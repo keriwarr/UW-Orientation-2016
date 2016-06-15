@@ -10,7 +10,23 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "trajan-pro-3", "Georgia", "Times New Roman", times, serif;
-  // letter-spacing: -0.1rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, li {
+  opacity: 0;
+
+  .no-js & {
+    opacity: 1;
+  }
+
+  .wf-loading & {
+    opacity: 0
+  }
+
+  .wf-active & {
+    opacity: initial;
+  }
 }
 
 h1, h2 {

@@ -18,4 +18,17 @@ jQuery(function($) {
     show_media: true
   });
 
+  var $header = $('#default-header');
+  if ($header.length < 1) {
+    return;
+  }
+
+  setTimeout(function () {
+    $header.addClass('stage-1');
+  }, 2000);
+
+  setTimeout(function () {
+    $header.addClass('stage-2');
+  }, 4000);
+
 });

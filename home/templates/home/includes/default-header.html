@@ -1,6 +1,12 @@
+{% load staticfiles %}
+
 <header id="default-header" class="callout large primary">
   <div class="row column text-center">
-    <h1>Mathemagical Kingdoms</h1>
-    <h2 class="subheader">Math Orientation 2016</h2>
+    <div id="default-header-bg-container"></div>
+    <div id="default-header-logo-container">
+      <img id="default-logo" class="logo" src="{% static 'home/img/logo.svg' %}" alt="Mathemagical Kingdoms" />
+      <h1 id="default-header-title">MathemagicaL<br>KingdomS</h1>
+      <h2 id="default-header-subtitle">Math Orientation MMXVI</h2>
+    </div>
   </div>
 </header>
