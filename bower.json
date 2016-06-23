@@ -15,5 +15,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "js-cookie": "~2.1.2",
+    "social-feed": "~0.1.2"
+  }
 }

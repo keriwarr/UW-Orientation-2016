@@ -23,12 +23,22 @@ jQuery(function($) {
     return;
   }
 
+  // Home page animation logic
+  var homeAnimationDelay = 1000;
+  if (Cookies.get('seenHomeAnimation')) {
+    homeAnimationDelay = 1000;
+  }
+
   setTimeout(function () {
     $header.addClass('stage-1');
-  }, 2000);
+  }, 2 * homeAnimationDelay);
 
   setTimeout(function () {
     $header.addClass('stage-2');
-  }, 4000);
+  }, 4 * homeAnimationDelay);
 
+  setTimeout(function () {
+    $header.addClass('stage-3');
+    Cookies.set('seenHomeAnimation', 'true');
+  }, 6 * homeAnimationDelay);
 });

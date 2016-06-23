@@ -4,8 +4,6 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -40,6 +38,7 @@
 
 <!-- vendor assets -->
 {% compress js %}
+<script src="{% static 'vendor/js-cookie/src/js.cookie.js' %}"></script>
 <script src="{% static 'vendor/codebird-js/codebird.js' %}"></script>
 <script src="{% static 'vendor/doT/doT.min.js' %}"></script>
 <script src="{% static 'vendor/moment/moment.js' %}"></script>
