@@ -1,24 +1,46 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'home/index.html', context=data())
+    data = getData()
+    return render(request, 'home/index.html', context=data)
 
 def news(request):
-    return render(request, 'home/news.html', context=data())
+    data = getData()
+    data.update({
+        'page': {
+            'title': 'News and Announcements'
+        }
+    })
+    return render(request, 'home/news.html', context=data)
 
 def about(request):
-    return render(request, 'home/about.html', context=data())
+    data = getData()
+    data.update({
+        'page': {
+            'title': 'About Orientation'
+        }
+    })
+    return render(request, 'home/about.html', context=data)
 
 def resources(request):
-    return render(request, 'home/resources.html', context=data())
+    data = getData()
+    data.update({
+        'page': {
+            'title': 'Resources'
+        }
+    })
+    return render(request, 'home/resources.html', context=data)
 
 def faq(request):
-    return render(request, 'home/faq.html', context=data())
+    data = getData()
+    data.update({
+        'page': {
+            'title': 'FAQ'
+        }
+    })
+    return render(request, 'home/faq.html', context=data)
 
-def contact(request):
-    return render(request, 'home/contact.html', context=data())
-
-def data():
+def getData():
     return {
         'site': {
             'title': 'Math Orientation 2016: Mathemagical Kingdoms',

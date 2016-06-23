@@ -45,8 +45,10 @@
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease;
+  .stage-1 & {
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease;
+  }
 }
 
 #default-header-bg-container {
@@ -58,6 +60,9 @@
 
   .stage-1 & {
     background-size: $map-width * .5 $map-height * .5;
+  }
+
+  .stage-3 & {
     -webkit-filter: blur(5px);
     filter: blur(5px);
   }

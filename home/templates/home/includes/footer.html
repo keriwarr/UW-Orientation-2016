@@ -1,34 +1,26 @@
 {% load staticfiles compress %}
 
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.twitter_username %}
-          <li>
-            {{ site.twitter_username }}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
+<footer id="site-footer">
+  <h4>{{ site.title }}</h4>
+  <ul id="site-footer-social-media-list">
+    <li>
+      <a class="navigation-menu-social" href="https://www.facebook.com/MathOrientation/" target="_blank">
+        <i class="fa fa-facebook"></i><span class="show-for-sr">Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a class="navigation-menu-social" href="https://twitter.com/MATHOrientation" target="_blank">
+        <i class="fa fa-twitter"></i><span class="show-for-sr">Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a class="navigation-menu-social" href="https://www.instagram.com/mathorientation" target="_blank">
+        <i class="fa fa-instagram"></i><span class="show-for-sr">Twitter</span>
+      </a>
+    </li>
+  </ul>
+  <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <p>{{ site.description }}</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
