@@ -1,3 +1,22 @@
+@keyframes hover {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  75% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+  }
+  99% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 #default-header {
   position: relative;
   overflow: hidden;
@@ -86,10 +105,10 @@
   max-height: inherit;
   -webkit-transition: inherit;
   transition: inherit;
-  transform: rotate3d(0, 95, 85, -320deg);
+  transform: translateY(7rem);
 
   .stage-1 & {
-    transform: rotate3d(0, 0, 0, 0);
+    transform: translateY(0);
   }
 
   .stage-2 & {
@@ -122,5 +141,25 @@
 
   @media #{$medium-up} {
     font-size: 2rem;
+  }
+}
+
+#default-header-down-arr {
+  font-size: 3rem;
+  opacity: 0.5;
+
+  i {
+    .stage-3 & {
+      -webkit-transition: none;
+      transition: none;
+      animation-name: hover;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+    }
+  }
+
+  @media #{$medium-up} {
+    font-size: 4rem;
   }
 }
