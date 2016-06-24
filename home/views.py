@@ -40,15 +40,6 @@ def faq(request):
     })
     return render(request, 'home/faq.html', context=data)
 
-def contact(request):
-    data = getData()
-    data.update({
-        'page': {
-            'title': 'Contact'
-        }
-    })
-    return render(request, 'home/contact.html', context=data)
-
 def getData():
     return {
         'site': {

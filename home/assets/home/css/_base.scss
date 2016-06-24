@@ -54,6 +54,9 @@ h1, h2 {
 #site-footer {
   color: white;
   background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/home/img/footer_image.svg");
   padding: 2rem;
   text-align: center;
   margin-top: 2rem;
