@@ -25,6 +25,19 @@ front-end package management
 npm install -g bower
 ```
 
+Install necessary dependencies
+
+```
+bower install foundation-sites
+pip install -r requirements.txt
+```
+
+Migrate SQLite database
+
+```
+python manage.py migrate
+```
+
 ## Running the server
 
 Navigate to the directory where this repo is cloned and run
