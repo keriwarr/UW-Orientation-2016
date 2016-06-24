@@ -9,5 +9,4 @@ urlpatterns = (
     url(r'^about/', views.about, name='about'),
     url(r'^resources/', views.resources, name='resources'),
     url(r'^faq/', views.faq, name='faq'),
-    url(r'^contact/', views.contact, name='contact'),
 )

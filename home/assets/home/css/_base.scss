@@ -4,14 +4,6 @@
 // $large: "screen and (min-width: 64em)";
 // $large-only: "screen and (min-width: 64em) and (max-width: 74.9375em)";
 
-body {
-  font-family: "Georgia", "Times New Roman", times, serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "trajan-pro-3", "Georgia", "Times New Roman", times, serif;
-}
-
 h1, h2, h3, h4, h5, h6,
 p, li {
   opacity: 0;
@@ -58,6 +50,9 @@ h1, h2 {
 #site-footer {
   color: white;
   background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/home/img/footer_image.svg");
   padding: 2rem;
   text-align: center;
   margin-top: 2rem;

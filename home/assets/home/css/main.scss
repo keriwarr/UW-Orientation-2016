@@ -1,10 +1,10 @@
+@import "settings"; // Foundation settings
 @import "foundation-sites/scss/foundation";
-@import "variables";
 @include foundation-everything;
 
-@import "./base";
-@import "./default";
-@import "./page";
+@import "base";
+@import "default";
+@import "page";
 
 .social-feed-element-profile-image {
   width: 3.5rem;
