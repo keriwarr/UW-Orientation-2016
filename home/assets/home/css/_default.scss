@@ -147,6 +147,10 @@
   font-size: 3rem;
   opacity: 0.5;
 
+  a {
+    color: inherit;
+  }
+
   i {
     .stage-3 & {
       -webkit-transition: none;
