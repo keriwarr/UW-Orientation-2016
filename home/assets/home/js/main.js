@@ -61,4 +61,11 @@ jQuery(function($) {
     $header.addClass('stage-3');
     Cookies.set('seenHomeAnimation', 'true');
   }, 6 * homeAnimationDelay);
+
+  setTimeout(function () {
+    // Disable animation after the initial animation
+    //  to avoid "laggy" feeling on iOS when the address
+    //  bar hides when srolling.
+    $header.addClass('no-transition');
+  }, 8 * homeAnimationDelay);
 });

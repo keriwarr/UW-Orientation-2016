@@ -28,13 +28,15 @@
 #default-header,
 #default-header-bg-container,
 #default-header-logo-container {
-  height: 512px;
-  max-height: 512px;
-  max-height: 75vh;
+  height: 30rem;
+  max-height: 100%;
 
   @media #{$medium-up} {
-    height: 100vw;
-    max-height: 100vh;
+    height: 40.5rem;
+  }
+
+  @media #{$xlarge-up} {
+    height: 50rem;
   }
 }
 
@@ -110,24 +112,26 @@
   transition: inherit;
   transform: translateY(7rem);
 
-  .stage-1 & {
-    transform: translateY(0);
-  }
-
-  .stage-2 & {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: 60%;
+  @media #{$small-only} {
+    padding: 1rem;
   }
 
   @media #{$medium-up} {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+
+  .stage-1 & {
+    transform: translateY(0);
+  }
+
+  .stage-2 & {
+    height: 60%;
+  }
 }
 
 #default-header-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1;
   @media #{$medium-up} {
     font-size: 3.5rem;
@@ -135,7 +139,7 @@
 }
 
 #default-header-subtitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
 
   @media #{$medium-up} {
