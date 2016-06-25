@@ -18,6 +18,19 @@ jQuery(function($) {
     show_media: true
   });
 
+  // Reference: https://chrissilich.com/blog/convert-em-size-to-pixels-with-jquery/
+  function em_to_px(input) {
+    input = (typeof input == 'number') ? input: parseFloat(input);
+    var emSize = parseFloat($("body").css("font-size"));
+    return (input * emSize);
+  }
+
+  function px_to_em(input) {
+    input = (typeof input == 'number') ? input: parseFloat(input);
+    var emSize = parseFloat($("body").css("font-size"));
+    return (input / emSize);
+  }
+
   // Smooth scrolling for same-page elements
   // Source: http://www.learningjquery.com/2007/10/improved-animated-scrolling-script-for-same-page-links
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -26,8 +39,18 @@ jQuery(function($) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
+        var targetOffset = target.offset().top;
+        var additionalOffset = $(this).data('additional-offset');
+        var scrollOffset = targetOffset;
+        if (additionalOffset && ~additionalOffset.indexOf('em')) {
+          console.log(em_to_px(additionalOffset));
+          scrollOffset -= em_to_px(additionalOffset);
+        } else if (additionalOffset && ~additionalOffset.indexOf('px')) {
+          scrollOffset += parseFloat(additionalOffset);
+        }
+
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: scrollOffset
         }, 1000);
         return false;
       }
