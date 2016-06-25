@@ -1,0 +1,17 @@
+#about-hierarchy {
+    text-align: center;
+    p {
+        text-align: left;
+    }
+}
+
+.about-hierarchy-image {
+    @media #{$medium-up} {
+        width: 12rem;
+        height: 12rem;
+    }
+    @media #{$large-up} {
+        width: 15rem;
+        height: 15rem;
+    }
+}

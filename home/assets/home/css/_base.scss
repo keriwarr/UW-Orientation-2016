@@ -80,3 +80,18 @@ h1, h2 {
     float: left;
   }
 }
+
+.explode {
+  max-width: 100%;
+  $medium-margin: -400% / 12 + 3%;
+  $large-margin: -500% / 12 + 3%;
+
+  @media #{$medium-up} {
+    margin-left: $medium-margin !important;
+    margin-right: $medium-margin !important;
+  }
+  @media #{$large-up} {
+    margin-left: $large-margin !important;
+    margin-right: $large-margin !important;
+  }
+}
