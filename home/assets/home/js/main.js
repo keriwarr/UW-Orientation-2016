@@ -23,10 +23,14 @@ jQuery(function($) {
     return;
   }
 
+  // This prevents a sudden change in size for the background hero image
+  $('#default-header-bg-container').fadeIn(50)
+
   // Home page animation logic
   var homeAnimationDelay = 1000;
   if (Cookies.get('seenHomeAnimation')) {
-    homeAnimationDelay = 1000;
+    homeAnimationDelay = 0;
+    $header.addClass('no-transition')
   }
 
   setTimeout(function () {
