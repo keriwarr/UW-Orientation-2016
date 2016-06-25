@@ -37,8 +37,13 @@ h1, h2 {
 
 #navigation-bar {
   > .top-bar {
-    text-align: center
+    text-align: center;
+    &, ul {
+      background-color: transparent;
+    }
   }
+  background-color: $topbar-background;
+  background-image: url('/assets/home/img/grey_texture.png');
 }
 
 #navigation-menu {
