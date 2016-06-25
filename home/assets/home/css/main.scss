@@ -2,9 +2,13 @@
 @import "foundation-sites/scss/foundation";
 @include foundation-everything;
 
+// Base styles
 @import "base";
 @import "default";
 @import "page";
+
+// Page-specific styles
+@import "about";
 
 .social-feed-element-profile-image {
   width: 3.5rem;

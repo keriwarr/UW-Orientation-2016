@@ -1,5 +1,129 @@
-{% extends "home/layouts/page.html" %}
+{% extends 'home/layouts/page.html' %}
+{% load staticfiles %}
 
 {% block content %}
-<p>This is the About page</p>
+<p>
+    The point of Math Orientation is to help you make the transition to
+    university life! Over the week, you will learn more about what courses are
+    offered at UW, become familiar with the campus, make new friends, and learn
+    what it means to be a member of the Faculty of Mathematics. Whatever your
+    story, Math Orientation will provide a lot of events to help you learn more
+    about your academics, your environment and your fellow students!
+</p>
+
+<hr>
+
+<div id="about-hierarchy">
+
+    <h3>Orientation Hierarchy</h3>
+
+    <h4>Front-line leaders</h4>
+    <img class="about-hierarchy-image" src="{% static 'home/img/hierarchy/front-line.svg' %}" alt="Logwarts">
+    <p>
+        The Pink and Black ties are the hard-working soldiers at the head of the
+        Kingdom's mighty army. Each of these leaders are trained in arts of
+        swordsmanship, engagement, and pie evasion. If there's anything you need
+        done, these mighty warriors are your go-to gals and guys.
+    </p>
+
+    <div class="row">
+        <div class="medium-6 column">
+            <h5>Pink Ties</h5>
+            <p>
+                Pink-Tie leaders are the ones interacting with you on the
+                front-lines, building the orientation experience, and
+                particpating alongside you. They will be helping your team gain
+                fame and glory on the fields of justice as you compete for the
+                Math Orientation week trophy.
+            </p>
+        </div>
+        <div class="medium-6 column">
+            <h5>Black Ties</h5>
+            <p>
+                Black-Tie leaders work behind the scenes to make the Math
+                Orientation week magic happen. They are responsible for setting
+                up, running, and tearing down events.
+            </p>
+        </div>
+    </div>
+
+    <h4>MODs</h4>
+    <img class="about-hierarchy-image" src="{% static 'home/img/hierarchy/mods.svg' %}" alt="Mod Olympus">
+
+    <p>
+        High above on MOD Olympus, the MODs and their magical logistical powers
+        protect the Kingdom from the forces of evil, disorder, and poor taste.
+        They are wicked-smart and show it by coming up every single battle plan.
+        They provide everything you could possibly need to make orientation
+        safe, memorable, and enjoyable by everyone. Look out for our symbol and
+        be sure to say hi when you see them. They may have a tasty treat for
+        you.
+    </p>
+
+    <div class="row">
+        <div class="medium-6 column">
+            <h5>Teamsters</h5>
+            <p>
+                Teamsters are rarely seen, but without them, Math Orientation
+                would not be possible. They ensure the transportation of
+                supplies, electronics, food, etc. to various faculty events. If
+                you do catch a glimpse of them, make sure to say hi (they also
+                have candy!).
+            </p>
+        </div>
+        <div class="medium-6 column">
+            <h5>Media</h5>
+            <p>
+                Media members are easily recognizable by their faces glued to a
+                camera. They work behind the scenes taking pictures and videos
+                throughout Math Orientation, documenting the entire week in all
+                its glory. If you think you've been snapped, hop by our Facebook
+                page as we'll try to post our pictures and videos throughout the
+                week.
+            </p>
+        </div>
+        <div class="medium-6 column">
+            <h5>Devisors</h5>
+            <p>
+                Devisors make the events possible. They spend their pre-week
+                time planning and coordinating the events that run during Math
+                Orientation week, then take charge and coordinate leaders during
+                the day to make sure things run smoothly.
+            </p>
+        </div>
+        <div class="medium-6 column">
+            <h5>Tie Guard</h5>
+            <p>
+                Tie Guards guard the Pink-Tie outside M3 during the week to
+                ensure it is protected 24/7. They are a central hub of
+                information for you throughout the week; if you're lost or just
+                want to say hi, stop by, they're very friendly.
+            </p>
+        </div>
+    </div>
+
+    <h4>Math FOC</h4>
+    <img class="about-hierarchy-image" src="{% static 'home/img/hierarchy/math-foc.svg' %}" alt="Mathematical Kingdoms Orienation Logo">
+    <p>
+        Your Math Federation Orientation Committee (FOC) that coordinate
+        everyone mentioned above!
+    </p>
+</div>
+
+<hr>
+
+<h3>Teams</h3>
+
+<hr>
+
+<h3>Helpful links</h3>
+
+<p>
+    Visit the <a href="{% url 'resources' %}">Resources</a> page for information
+    on the most important things you will need in your first year.
+</p>
+
+<p class="text-center">
+    <a href="{% url 'resources' %}" class="button">View Resources</a>
+</p>
 {% endblock %}
