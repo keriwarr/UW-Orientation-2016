@@ -66,6 +66,7 @@ h1, h2 {
   a:visited {
     color: inherit;
   }
+  @include border-top-serrated(2rem, white, 1rem)
 }
 
 #site-footer-social-media-list {
