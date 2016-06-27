@@ -6,18 +6,16 @@
 
 h1, h2, h3, h4, h5, h6,
 p, li {
-  opacity: 0;
-
-  .no-js & {
-    opacity: 1;
-  }
-
   .wf-loading & {
     opacity: 0
   }
 
   .wf-active & {
     opacity: initial;
+  }
+
+  .no-js & {
+    opacity: 1;
   }
 }
 
@@ -39,8 +37,13 @@ h1, h2 {
 
 #navigation-bar {
   > .top-bar {
-    text-align: center
+    text-align: center;
+    &, ul {
+      background-color: transparent;
+    }
   }
+  background-color: $topbar-background;
+  background-image: url('/assets/home/img/grey_texture.png');
 }
 
 #navigation-menu {
@@ -63,6 +66,7 @@ h1, h2 {
   a:visited {
     color: inherit;
   }
+  @include border-top-serrated(2rem, white, 1rem)
 }
 
 #site-footer-social-media-list {
