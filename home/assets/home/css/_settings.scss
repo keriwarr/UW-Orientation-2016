@@ -40,6 +40,8 @@
 //  35. Tooltip
 //  36. Top Bar
 //  37. Custom Variables
+//  38. Custom Fonts
+//  39. Mixins
 
 @import "foundation-sites/scss/util/util";
 @import url(https://fonts.googleapis.com/css?family=Cantarell); // Google font for Cantarell
@@ -87,7 +89,7 @@ $breakpoints: (
   xlarge: 1200px,
   xxlarge: 1440px,
 );
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge);
 
 // 3. The Grid
 // -----------
@@ -573,3 +575,67 @@ $topbar-unstack-breakpoint: medium;
 $map-width: 2200px;
 $map-height: 1600px;
 $index-hero-background-color: rgb(241,215,195); // Yellow-ish to match the map's color
+
+// 38. Custom Fonts
+// -----------
+
+@font-face {
+  font-family: 'TrajanPro3-Regular';
+  src: url('fonts/TrajanPro3-Regular.eot');
+  src: url('fonts/TrajanPro3-Regular.woff2') format('woff2'),
+       url('fonts/TrajanPro3-Regular.woff') format('woff'),
+       url('fonts/TrajanPro3-Regular.ttf') format('truetype'),
+       url('fonts/TrajanPro3-Regular.svg#TrajanPro3-Regular') format('svg'),
+       url('fonts/TrajanPro3-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Cantarell font
+@import url(https://fonts.googleapis.com/css?family=Cantarell);
+
+// 39. Mixins
+// -----------
+
+// border-serrated - a zig zag triangle border with linear gradient
+// Source: https://gist.github.com/justinmc/9837998
+
+@mixin border-top-serrated($size, $color-outer, $extra-padding) {
+    & {
+        position: relative;
+        overflow: auto;
+        padding-top: $size + $extra-padding;
+    }
+    &:before {
+        top: 0px;
+        background-position: left top;
+        background: linear-gradient(-135deg, $color-outer $size / 2, transparent 0),
+          linear-gradient(135deg, $color-outer $size / 2, transparent 0);
+        @include border-serrated-helper($size, $color-outer);
+    }
+}
+@mixin border-bottom-serrated($size, $color-outer, $extra-padding) {
+    & {
+        position: relative;
+        overflow: auto;
+        padding-bottom: $size + $extra-padding;
+    }
+    &:after {
+        bottom: 0px;
+        background-position: left bottom;
+        background: linear-gradient(-45deg, $color-outer $size / 2, transparent 0),
+          linear-gradient(45deg, $color-outer $size / 2, transparent 0);
+        @include border-serrated-helper($size, $color-outer);
+    }
+}
+
+@mixin border-serrated-helper($size, $color-outer) {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: $size;
+    background-repeat: repeat-x;
+    background-size: $size $size;
+}
