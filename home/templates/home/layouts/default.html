@@ -1,0 +1,12 @@
+{% load staticfiles compress %}<!DOCTYPE html>
+<html class="no-js">
+    {% include 'home/includes/head.html' %}
+    <body>
+        {% include 'home/includes/default-header.html' %}
+        {% include 'home/includes/navigation.html' %}
+        <div id="main">
+            {% block content %}{% endblock %}
+        </div>
+        {% include 'home/includes/footer.html' %}
+    </body>
+</html>

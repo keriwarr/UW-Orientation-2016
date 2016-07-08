@@ -1,0 +1,101 @@
+// $small-only: "screen and (max-width: 39.9375em)";
+// $medium: "screen and (min-width: 40em)";
+// $medium-only: "screen and (min-width: 40em) and (max-width: 63.9375em)";
+// $large: "screen and (min-width: 64em)";
+// $large-only: "screen and (min-width: 64em) and (max-width: 74.9375em)";
+
+h1, h2, h3, h4, h5, h6,
+p, li {
+  .wf-loading & {
+    opacity: 0
+  }
+
+  .wf-active & {
+    opacity: initial;
+  }
+
+  .no-js & {
+    opacity: 1;
+  }
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.muted {
+  opacity: 0.6;
+}
+
+#main {
+  margin-top: $global-margin;
+}
+
+#navigation-container {
+  z-index: 1;
+}
+
+#navigation-bar {
+  > .top-bar {
+    text-align: center;
+    &, ul {
+      background-color: transparent;
+    }
+  }
+  background-color: $topbar-background;
+  background-image: url('/assets/home/img/grey_texture.png');
+}
+
+#navigation-menu {
+  display: inline-block;
+}
+
+#site-footer {
+  color: white;
+  background-color: $primary-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/home/img/footer_image.svg");
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: inherit;
+  }
+  @include border-top-serrated(2rem, white, 1rem)
+}
+
+#site-footer-social-media-list {
+  li {
+    display: inline-block;
+    padding: 0 0.5rem;
+  }
+}
+
+.navigation-menu-social,
+.menu > li > a.navigation-menu-social {
+  display: inline-block;
+  @media #{$medium-up} {
+    display: block;
+    float: left;
+  }
+}
+
+.explode {
+  max-width: 100%;
+  $medium-margin: -400% / 12 + 3%;
+  $large-margin: -500% / 12 + 3%;
+
+  @media #{$medium-up} {
+    margin-left: $medium-margin !important;
+    margin-right: $medium-margin !important;
+  }
+  @media #{$large-up} {
+    margin-left: $large-margin !important;
+    margin-right: $large-margin !important;
+  }
+}

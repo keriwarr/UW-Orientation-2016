@@ -1,0 +1,48 @@
+{% load staticfiles compress %}
+
+<footer id="site-footer">
+  <h4>{{ site.title }}</h4>
+  <ul id="site-footer-social-media-list">
+    <li>
+      <a class="navigation-menu-social" href="https://www.facebook.com/MathOrientation/" target="_blank">
+        <i class="fa fa-facebook"></i><span class="show-for-sr">Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a class="navigation-menu-social" href="https://twitter.com/MATHOrientation" target="_blank">
+        <i class="fa fa-twitter"></i><span class="show-for-sr">Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a class="navigation-menu-social" href="https://www.instagram.com/mathorientation" target="_blank">
+        <i class="fa fa-instagram"></i><span class="show-for-sr">Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a class="navigation-menu-social" href="mailto:{{ site.email }}">
+        <i class="fa fa-envelope"></i><span class="show-for-sr">Email</span>
+      </a>
+    </li>
+  </ul>
+  <p>{{ site.description }}</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="{% static 'vendor/foundation-sites/dist/foundation.js' %}"></script>
+
+<!-- vendor assets -->
+{% compress js %}
+<script src="{% static 'vendor/js-cookie/src/js.cookie.js' %}"></script>
+<script src="{% static 'vendor/codebird-js/codebird.js' %}"></script>
+<script src="{% static 'vendor/doT/doT.min.js' %}"></script>
+<script src="{% static 'vendor/moment/moment.js' %}"></script>
+<script src="{% static 'vendor/moment/locale/en-ca.js' %}"></script>
+<script src="{% static 'vendor/social-feed/js/jquery.socialfeed.js' %}"></script>
+{% endcompress %}
+
+<!--- main JS -->
+{% compress js %}
+<script src="{% static 'home/js/main.js' %}"></script>
+{% endcompress %}
+
+<script>$(document).foundation();</script>

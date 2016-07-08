@@ -1,0 +1,172 @@
+@keyframes hover {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+  }
+  75% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+  }
+  99% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+#default-header {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: $index-hero-background-color;
+}
+
+#default-header,
+#default-header-bg-container,
+#default-header-logo-container {
+  height: 30rem;
+  max-height: 100%;
+
+  @media #{$medium-up} {
+    height: 40.5rem;
+  }
+
+  @media #{$xlarge-up} {
+    height: 50rem;
+  }
+}
+
+#default-header-bg-container,
+#default-header-logo-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  .stage-1 & {
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease;
+  }
+  .no-transition & {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+#default-header-bg-container {
+  background-image: url("/assets/home/img/map.jpg");
+  background-size: $map-width * .75 $map-height * .75;
+  background-position: 50% 25%;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  display: none;
+
+  .stage-1 & {
+    background-size: $map-width * .5 $map-height * .5;
+  }
+
+  .stage-3 & {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  @media #{$medium-up} {
+    background-size: $map-width $map-height;
+    background-position: 50% 40%;
+
+    .stage-1 & {
+      background-size: $map-width * .75 $map-height * .75;
+    }
+  }
+}
+
+#default-header-logo-container {
+  top: 0;
+  opacity: 0;
+
+  .stage-1 & {
+    opacity: 1;
+  }
+
+  @media #{$medium-up} {
+    max-height: 1024px;
+    max-height: 100vh;
+  }
+
+  @media #{$large-up} {
+    .stage-2 & {
+      top: 0;
+    }
+  }
+}
+
+#default-logo {
+  padding: 2rem;
+  height: inherit;
+  max-height: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+  transform: translateY(7rem);
+
+  @media #{$small-only} {
+    padding: 1rem;
+  }
+
+  @media #{$medium-up} {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .stage-1 & {
+    transform: translateY(0);
+  }
+
+  .stage-2 & {
+    height: 60%;
+  }
+}
+
+#default-header-title {
+  font-size: 2rem;
+  line-height: 1;
+  @media #{$medium-up} {
+    font-size: 3.5rem;
+  }
+}
+
+#default-header-subtitle {
+  font-size: 1rem;
+  line-height: 1;
+
+  @media #{$medium-up} {
+    font-size: 2rem;
+  }
+}
+
+#default-header-down-arr {
+  font-size: 3rem;
+  opacity: 0.5;
+
+  a {
+    color: inherit;
+  }
+
+  i {
+    .stage-3 & {
+      -webkit-transition: none;
+      transition: none;
+      animation-name: hover;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: 3;
+    }
+  }
+
+  @media #{$medium-up} {
+    font-size: 4rem;
+  }
+}

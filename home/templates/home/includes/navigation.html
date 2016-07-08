@@ -1,0 +1,31 @@
+<div id="navigation-container" data-sticky-container>
+  <div data-sticky data-sticky-on="small" data-top-anchor="navigation-container" data-options="marginTop:0;" style="width:100%">
+    <div id="title-bar" class="title-bar show-for-small-only" data-responsive-toggle="navigation-bar">
+      <button class="menu-icon" type="button" data-toggle><span class="show-for-sr">Toggle navigation</span></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <nav id="navigation-bar" class="top-bar">
+      <div class="top-bar">
+        <ul id="navigation-menu" class="vertical medium-horizontal menu menu-centered">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'news' %}">News<span class="hide-for-medium-only"> and Announcements</span></a></li>
+          <li><a href="{% url 'about' %}">About<span class="hide-for-medium-only"> Orientation</span></a></li>
+          <li><a href="{% url 'resources' %}">Resources</a></li>
+          <li><a href="{% url 'faq' %}">FAQ</a></li>
+          <li>
+            <a class="navigation-menu-social" href="https://www.facebook.com/MathOrientation/" target="_blank">
+              <i class="fa fa-facebook"></i><span class="show-for-sr">Facebook</span>
+            </a>
+            <a class="navigation-menu-social" href="https://twitter.com/MATHOrientation" target="_blank">
+              <i class="fa fa-twitter"></i><span class="show-for-sr">Twitter</span>
+            </a>
+            <a class="navigation-menu-social" href="https://www.instagram.com/mathorientation" target="_blank">
+              <i class="fa fa-instagram"></i><span class="show-for-sr">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
