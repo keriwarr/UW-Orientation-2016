@@ -28,8 +28,8 @@ npm install -g bower
 Install necessary dependencies
 
 ```
-bower install foundation-sites
 pip install -r requirements.txt
+bower install
 ```
 
 Migrate SQLite database
