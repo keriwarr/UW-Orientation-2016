@@ -19,6 +19,7 @@
   "dependencies": {
     "js-cookie": "~2.1.2",
     "social-feed": "~0.1.2",
-    "foundation-sites": "^6.2.3"
+    "foundation-sites": "^6.2.3",
+    "font-awesome": "^4.6.3"
   }
 }
