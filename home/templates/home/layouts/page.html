@@ -4,8 +4,15 @@
     <body>
         {% include 'home/includes/page-header.html' %}
         {% include 'home/includes/navigation.html' %}
-        <div id="main" class="row medium-8 large-7 columns">
-            {% block content %}{% endblock %}
+        <div id="page-container">
+            <div id="main-top" class="row">
+              <div id="main-top-scroll-header" class="row medium-9 large-8 columns"></div>
+            </div>
+            <div id="main" class="row">
+                <div id="main-content" class="medium-8 large-7 columns">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
         </div>
         {% include 'home/includes/footer.html' %}
     </body>
