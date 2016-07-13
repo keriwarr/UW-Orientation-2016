@@ -1,5 +1,5 @@
 body {
-  background-color: $secondary-color;
+  background-color: $parchment-color-dark;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -32,8 +32,12 @@ h1, h2 {
   opacity: 0.6;
 }
 
+#default-container, #page-container {
+  background-color: $secondary-color;
+}
+
 #main-top {
-  margin-top: $global-margin;
+  padding-top: $global-margin;
   @media #{$small-only} {
     display: none;
   }
@@ -78,7 +82,7 @@ h1, h2 {
 #main-content {
   position: relative;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 1rem;
   padding-bottom: 5rem;
   float: none;
   background-color: $parchment-color-light;
@@ -104,6 +108,10 @@ h1, h2 {
   &:after {
     left: 100%;
     background-position: 100%;
+  }
+
+  @media #{$medium-up} {
+    padding-top: 3rem;
   }
 }
 
