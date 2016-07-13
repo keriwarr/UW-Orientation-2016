@@ -1,6 +1,3 @@
-$parchment-color-light: #f4e1d4;
-$parchment-color-dark: #e7c5a3;
-
 body {
   background-color: $secondary-color;
 }
@@ -35,11 +32,8 @@ h1, h2 {
   opacity: 0.6;
 }
 
-#page-container, #default-container {
-  margin-top: $global-margin;
-}
-
 #main-top {
+  margin-top: $global-margin;
   @media #{$small-only} {
     display: none;
   }
@@ -137,6 +131,7 @@ h1, h2 {
   position: relative;
   margin-top: 2rem;
   padding: 2rem;
+  padding-top: 4rem;
   text-align: center;
   color: white;
   background-repeat: no-repeat;

@@ -170,3 +170,39 @@
     font-size: 4rem;
   }
 }
+
+#home-announcements,
+#home-social-feed {
+  margin-top: $global-margin;
+  margin-bottom: $global-margin;
+}
+
+#home-announcement-body,
+#home-social-feed-bounding {
+  padding: 1rem;
+  overflow-y: scroll;
+  box-shadow: 0 1rem 3rem -1rem rgba(0, 0, 0, 1);
+}
+
+#home-announcement-body {
+  border: 1px solid $parchment-color-dark;
+  background-color: $parchment-color-light;
+}
+
+#home-social-feed {
+  display: none;
+  @media #{$medium-up} {
+    display: block;
+  }
+}
+
+#home-social-feed-bounding {
+  background-color: white;
+  @media #{$medium-up} {
+    height: 500px; // Is reset via JavasScript
+  }
+}
+
+.home-subheader {
+  color: white;
+}
