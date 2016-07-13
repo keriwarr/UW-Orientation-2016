@@ -57,6 +57,18 @@ jQuery(function($) {
     }
   });
 
+  // Set up polygons immediately after
+  setTimeout(function () {
+    lowPolyOnLoad({
+      animate: false
+    });
+    $(window).resize(function () {
+      lowPolyOnResize();
+      return true;
+    });
+  }, 1);
+
+  $(window)
   var $header = $('#default-header');
   if ($header.length < 1) {
     return;

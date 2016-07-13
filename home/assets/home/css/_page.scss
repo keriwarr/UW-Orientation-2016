@@ -1,11 +1,62 @@
 #page-header {
+  position: relative;
+  height: 25rem;
+  background-color: $primary-color;
+  background: radial-gradient(ellipse at center, $primary-color 0%, darken($primary-color, 25%) 100%);
+
+  @media #{$medium-up} {
+    height: 20rem;
+  }
+}
+
+#page-header-bg-container,
+#page-header-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#page-header-content {
   margin-bottom: 0;
+  color: white;
+  a, a:hover, a:active, a:visited {
+    color: white;
+    opacity: 0.75;
+  }
+
+  @media #{$medium-up} {
+    h1, h2 {
+      text-align: left;
+    }
+  }
+}
+
+#page-header-title {
+  @media #{$medium-up} {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media #{$large-up} {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 #page-subtitle {
-  font-size: 2rem;
+  @media #{$medium-up} {
+    font-size: 2rem;
+  }
 }
 
+#page-logo {
+  display: block;
+  margin: 1rem auto;
+  max-width: 256px;
+  max-height: 256px;
+}
 #default-header-title {
   font-family: "TrajanPro3-Regular", "Georgia", "Times New Roman", times, serif;
 }

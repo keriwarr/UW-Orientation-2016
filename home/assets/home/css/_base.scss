@@ -37,7 +37,7 @@ h1, h2 {
 }
 
 #main-top {
-  padding-top: $global-margin;
+  padding-top: $global-margin * 2;
   @media #{$small-only} {
     display: none;
   }
@@ -90,14 +90,15 @@ h1, h2 {
 
   &:before, &:after {
     content: " ";
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
     width: 25px;
     background-image: url("/assets/home/img/body-back-sides.svg");
     background-size: 200%; // @2x
-    @media #{$small-only} {
-      display: none;
+    @media #{$medium-up} {
+      display: block;
     }
   }
 
@@ -121,18 +122,77 @@ h1, h2 {
 }
 
 #navigation-bar {
-  > .top-bar {
-    text-align: center;
-    &, ul {
-      background-color: transparent;
+  background-color: $topbar-background;
+  background-image: url("/assets/home/img/grey-texture.png");
+  padding-left: 0;
+  padding-right: 0;
+
+  &:before, &:after {
+    content: " ";
+    display: none;
+    width: 100%;
+    height: 50px;
+    background-image: url("/assets/home/img/grey-texture-diagonal.png");
+    background-position: center top;
+    background-size: 50px 50px;
+
+    @media #{$medium-up} {
+      display: block;
     }
   }
-  background-color: $topbar-background;
-  background-image: url('/assets/home/img/grey_texture.png');
+
+  &:before {
+    margin-top: -2rem;
+  }
+
+  &:after {
+    margin-bottom: -2rem;
+  }
+}
+
+#navigation-bar-main {
+  text-align: center;
+  padding: 0;
+  &, ul {
+    background-color: transparent;
+  }
 }
 
 #navigation-menu {
   display: inline-block;
+  font-size: 1.2rem;
+
+  @media #{$medium-up} {
+    font-size: 1.1rem;
+
+    li {
+      &:after {
+        content: "◆";
+        display: block;
+        float: left;
+        line-height: 2.2;
+        color: $secondary-color;
+        // opacity: 0.5;
+      }
+      &:last-child:after {
+        display: none;
+      }
+      a {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        float: left;
+      }
+    }
+  }
+
+  @media #{$large-up} {
+    font-size: 1.2rem;
+    a {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
 }
 
 #site-footer {
@@ -183,4 +243,12 @@ h1, h2 {
     margin-left: $large-margin !important;
     margin-right: $large-margin !important;
   }
+}
+
+.low-poly polygon {
+  -webkit-transition: fill 1s ease;
+  transition: fill 1s ease;
+}
+.colorize {
+  fill: rgba(lighten($primary-color, 10%), 0.75) !important;
 }

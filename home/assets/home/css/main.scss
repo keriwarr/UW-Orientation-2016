@@ -3,6 +3,7 @@
 @include foundation-everything;
 
 // Base styles
+@import "navigation";
 @import "base";
 @import "default";
 @import "page";
