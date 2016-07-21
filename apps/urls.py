@@ -4,6 +4,6 @@ from apps import views
 
 
 urlpatterns = [
-    url(r'^tie-guard-radio/$', include('apps.tie_guard_radio.urls')),
-    url(r'^announcements/$', include('apps.announcements.urls')),
+    url(r'^tie-guard-radio/', include('apps.tie_guard_radio.urls')),
+    url(r'^announcements/', include('apps.announcements.urls')),
 ]
