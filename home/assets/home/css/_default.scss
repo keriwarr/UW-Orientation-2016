@@ -22,6 +22,7 @@
   overflow: hidden;
   margin-bottom: 0;
   padding: 0;
+  border: 0;
   background-color: $index-hero-background-color;
 }
 
@@ -41,7 +42,8 @@
 }
 
 #default-header-bg-container,
-#default-header-logo-container {
+#default-header-logo-container,
+.default-header-bg {
   position: absolute;
   top: 0;
   right: 0;
@@ -81,6 +83,13 @@
     .stage-1 & {
       background-size: $map-width * .75 $map-height * .75;
     }
+  }
+}
+
+#default-header-low-poly-bg {
+  opacity: 0;
+  .stage-2 & {
+    opacity: 1;
   }
 }
 
@@ -169,4 +178,40 @@
   @media #{$medium-up} {
     font-size: 4rem;
   }
+}
+
+#home-announcements,
+#home-social-feed {
+  margin-top: $global-margin * 2;
+  margin-bottom: $global-margin * 2;
+}
+
+#home-announcement-body,
+#home-social-feed-bounding {
+  padding: 1rem;
+  overflow-y: scroll;
+  box-shadow: 0 1rem 3rem -1rem rgba(0, 0, 0, 1);
+}
+
+#home-announcement-body {
+  border: 1px solid $parchment-color-dark;
+  background-color: $parchment-color-light;
+}
+
+#home-social-feed {
+  display: none;
+  @media #{$medium-up} {
+    display: block;
+  }
+}
+
+#home-social-feed-bounding {
+  background-color: white;
+  @media #{$medium-up} {
+    height: 500px; // Is reset via JavasScript
+  }
+}
+
+.home-subheader {
+  color: white;
 }

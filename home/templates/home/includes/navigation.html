@@ -1,19 +1,31 @@
 <div id="navigation-container" data-sticky-container>
   <div data-sticky data-sticky-on="small" data-top-anchor="navigation-container" data-options="marginTop:0;" style="width:100%">
     <div id="title-bar" class="title-bar show-for-small-only" data-responsive-toggle="navigation-bar">
-      <button class="menu-icon" type="button" data-toggle><span class="show-for-sr">Toggle navigation</span></button>
-      <div class="title-bar-title">Menu</div>
+      <button class="menu-icon" type="button" aria-label="navigation menu" data-toggle>
+        <span class="show-for-sr">Toggle legend</span>
+      </button>
+      <div class="title-bar-title">Legend</div>
     </div>
 
-    <nav id="navigation-bar" class="top-bar">
-      <div class="top-bar">
-        <ul id="navigation-menu" class="vertical medium-horizontal menu menu-centered">
-          <li><a href="{% url 'index' %}">Home</a></li>
-          <li><a href="{% url 'news' %}">News<span class="hide-for-medium-only"> and Announcements</span></a></li>
-          <li><a href="{% url 'about' %}">About<span class="hide-for-medium-only"> Orientation</span></a></li>
-          <li><a href="{% url 'resources' %}">Resources</a></li>
-          <li><a href="{% url 'faq' %}">FAQ</a></li>
-          <li>
+    <nav id="navigation-bar" class="top-bar" role="navigation">
+      <div id="navigation-bar-main" class="top-bar">
+        <ul id="navigation-menu" class="vertical medium-horizontal menu menu-centered" role="menubar">
+          <li role="presentation">
+            <a href="{% url 'index' %}" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="{% url 'news' %}" role="menuitem">News<span class="hide-for-medium-only"> and Announcements</span></a>
+          </li>
+          <li role="presentation">
+            <a href="{% url 'about' %}" role="menuitem">About<span class="hide-for-medium-only"> Orientation</span></a>
+          </li>
+          <li role="presentation">
+            <a href="{% url 'resources' %}" role="menuitem">Resources</a>
+          </li>
+          <li role="presentation">
+            <a href="{% url 'faq' %}" role="menuitem">FAQ</a>
+          </li>
+          <li role="presentation">
             <a class="navigation-menu-social" href="https://www.facebook.com/MathOrientation/" target="_blank">
               <i class="fa fa-facebook"></i><span class="show-for-sr">Facebook</span>
             </a>

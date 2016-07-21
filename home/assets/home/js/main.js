@@ -1,5 +1,16 @@
 jQuery(function($) {
 
+  function setupPolyAnimations() {
+    lowPolyOnLoad({
+      animate: false
+    });
+
+    $(window).resize(function () {
+      lowPolyOnResize();
+      return true;
+    });
+  }
+
   $('.social-feed-container').socialfeed({
     instagram: {
       accounts: ['@mathorientation'],
@@ -59,9 +70,11 @@ jQuery(function($) {
 
   var $header = $('#default-header');
   if ($header.length < 1) {
+    setupPolyAnimations();
     return;
   }
 
+  // Home page scripts
   // This prevents a sudden change in size for the background hero image
   $('#default-header-bg-container').fadeIn(50)
 
@@ -91,4 +104,15 @@ jQuery(function($) {
     //  bar hides when srolling.
     $header.addClass('no-transition');
   }, 8 * homeAnimationDelay);
+
+  // Make news and social media same size
+  $(window).resize(function () {
+    var $announcement = $('#home-announcement-body');
+    // +2 to account for border
+    $('#home-social-feed-bounding').height($announcement.height() + 2);
+    return true;
+  }).trigger('resize');
+
+  // Must happen after the resize
+  setupPolyAnimations();
 });

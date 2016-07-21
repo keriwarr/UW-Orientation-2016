@@ -2,6 +2,7 @@
 
 <footer id="site-footer">
   <h4>{{ site.title }}</h4>
+  <p>{{ site.description }}</p>
   <ul id="site-footer-social-media-list">
     <li>
       <a class="navigation-menu-social" href="https://www.facebook.com/MathOrientation/" target="_blank">
@@ -24,7 +25,6 @@
       </a>
     </li>
   </ul>
-  <p>{{ site.description }}</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -42,6 +42,7 @@
 
 <!--- main JS -->
 {% compress js %}
+<script src="{% static 'home/js/low-poly.js' %}"></script>
 <script src="{% static 'home/js/main.js' %}"></script>
 {% endcompress %}
 
