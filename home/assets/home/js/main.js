@@ -1,5 +1,16 @@
 jQuery(function($) {
 
+  function setupPolyAnimations() {
+    lowPolyOnLoad({
+      animate: false
+    });
+
+    $(window).resize(function () {
+      lowPolyOnResize();
+      return true;
+    });
+  }
+
   $('.social-feed-container').socialfeed({
     instagram: {
       accounts: ['@mathorientation'],
@@ -59,18 +70,12 @@ jQuery(function($) {
 
   // Set up polygons immediately after
   setTimeout(function () {
-    lowPolyOnLoad({
-      animate: false
-    });
-    $(window).resize(function () {
-      lowPolyOnResize();
-      return true;
-    });
+
   }, 1);
 
-  $(window)
   var $header = $('#default-header');
   if ($header.length < 1) {
+    setupPolyAnimations();
     return;
   }
 
@@ -113,4 +118,6 @@ jQuery(function($) {
     return true;
   }).trigger('resize');
 
+  // Must happen after the resize
+  setupPolyAnimations();
 });
