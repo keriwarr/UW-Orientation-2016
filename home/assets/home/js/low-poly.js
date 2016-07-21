@@ -23,7 +23,7 @@ function onLoad(opts) {
 
   options = opts || options || {};
 
-  var unitSize = (window.innerWidth+window.innerHeight)/20;
+  var unitSize = (window.innerWidth+window.innerHeight)/10;
   numPointsX = Math.ceil(window.innerWidth/unitSize)+1;
   numPointsY = Math.ceil(window.innerHeight/unitSize)+1;
   unitWidth = Math.ceil(window.innerWidth/(numPointsX-1));
@@ -135,8 +135,8 @@ function refresh() {
 }
 
 function colorize() {
-  var polygonDuration = 2000 + Math.round(Math.random() * 8000);
-  var colorizeDuration = Math.round(Math.random() * 500);
+  var polygonDuration = 3000 + Math.round(Math.random() * 8000);
+  var colorizeDuration = Math.round(Math.random() * 3000);
   var polygons = document.querySelector('.low-poly svg').childNodes;
   var polygon = polygons[Math.floor(Math.random() * polygons.length)];
   polygon.classList.add('colorize');

@@ -246,9 +246,14 @@ h1, h2 {
 }
 
 .low-poly polygon {
-  -webkit-transition: fill 1s ease;
-  transition: fill 1s ease;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .colorize {
-  fill: rgba(lighten($primary-color, 10%), 0.75) !important;
+  opacity: 0.1
 }
