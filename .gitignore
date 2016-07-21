@@ -16,3 +16,6 @@ secret_key.txt
 .env.json
 
 .DS_Store
+
+/assets/CACHE
+/assets/vendor
