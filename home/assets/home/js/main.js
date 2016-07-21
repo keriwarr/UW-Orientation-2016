@@ -68,11 +68,6 @@ jQuery(function($) {
     }
   });
 
-  // Set up polygons immediately after
-  setTimeout(function () {
-
-  }, 1);
-
   var $header = $('#default-header');
   if ($header.length < 1) {
     setupPolyAnimations();
