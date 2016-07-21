@@ -1,0 +1,30 @@
+{% load user_extras %}
+<div class='sidebar desktop'>
+  <a href='/'>
+    <img src='{{ STATIC_URL }}images/main_gray.png' alt='Math Orientation logo' />
+  </a>
+  <ul class='links'>
+    <li class='link'>
+      <a href='{% url "announcements" %}'>Announcements</a>
+    </li>
+    {% if request.user and request.user.position == 'F' %}
+      <li>
+        <a href='{% url "new_announcement" %}'>New Announcement</a>
+      </li>
+    {% endif %}
+    <li class='link'>
+      <a href='{% url "profile" %}'>My Team</a>
+    </li>
+    <li class='link'>
+      <a href='{% url "view_all_team_rankings" %}'>Team Rankings</a>
+    </li>
+    {% if request.user.is_mod %}
+      <li class='link'>
+        <a href='{% url "register" %}'>Register New Student</a>
+      </li>
+    {% endif %}
+    <li class='link'>
+      <a href='mailto:mathorientation@uwaterloo.ca'>Contact</a>
+    </li>
+  </ul>
+</div>

@@ -32,8 +32,15 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'compressor',
     'users',
-    'compressor'
+    'teams',
+    'apps',
+    'home',
+    'games',
+    'apps.tie_guard_radio',
+    'apps.sorting_hat',
+    'apps.announcements',
 )
 
 # Root urls
@@ -107,10 +114,16 @@ STATICFILES_FINDERS = (
 )
 
 # Custom authentication
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.CustomUser'
 
 # Asset compression
 COMPRESS_ENABLED = True
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
+
+# Setup the login urls to use our naming scheme
+# https://docs.djangoproject.com/en/dev/ref/settings/#login-redirect-url
+LOGIN_URL = '/users/login'
+LOGIN_REDIRECT_URL = '/users/profile'
+LOGOUT_URL = '/users/logout'

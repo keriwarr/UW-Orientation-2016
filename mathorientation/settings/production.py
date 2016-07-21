@@ -5,3 +5,5 @@ SECRET_KEY =
 
 # Debug is turned off in production.
 DEBUG = False
+
+ENVIRONMENT='production'

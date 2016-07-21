@@ -1,0 +1,42 @@
+{% extends "profile/_layout.html" %}
+{% load staticfiles %}
+{% load compress %}
+
+{% block title %}
+Register | Math Orientation 2015
+{% endblock %}
+
+{% block content %}
+  <div class='page-content'>
+    <h1>Register for Orientation Week</h1>
+    <div style='margin-top: 20px'>
+      <form method='POST' class='django-form'>
+        {% csrf_token %}
+        <div class='padded'>
+          {{ form }}
+        </div>
+       <div class='form-group centered'>
+          <input class='btn btn-pink btn-lg' type='submit' value='Submit' />
+          <div id='reset' class='btn btn-pink btn-lg' style='display: none'>
+            <span>Reset</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id='scripts'>
+    <script type='text/javascript'>
+      window.TEAMS = [
+        {% for team in first_year_teams %}
+          {
+            'id': {{ team.id }},
+            'name': '{{ team.name }}',
+            'image': '{{ team.logo }}'
+          },
+        {% endfor %}
+      ];
+    </script>
+    <script type='text/javascript' src='//code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script type='text/javascript' src='{% static "javascript/user-register.js" %}'></script>
+  </div>
+{% endblock %}

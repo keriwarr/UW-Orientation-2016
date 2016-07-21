@@ -1,0 +1,5 @@
+FOC = 'F'
+MOD = 'M'
+HEAD_LEADER = 'HL'
+LEADER = 'L'
+FIRST_YEAR = 'FY'

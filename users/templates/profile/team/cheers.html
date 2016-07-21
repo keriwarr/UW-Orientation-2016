@@ -1,0 +1,27 @@
+{% extends "profile/_layout.html" %}
+
+{% block title %}
+Edit {{ team.name }} | Math Orientation 2015
+{% endblock %}
+
+{% block content %}
+  <div class='page-content'>
+    <form class='profile-form' method='POST'>
+      {% csrf_token %}
+      {% if form.errors %}
+        <div class='bg bg-danger'>All fields are required.</div>
+      {% endif %}
+      <div class='form-group form-group-bordered'>
+        <h3 for='name'>Cheer Name:</h3>
+        {{ form.name }}
+      </div>
+      <div class='form-group form-group-bordered'>
+        <h3 for='text'>Lyrics:</h3>
+        {{ form.text }}
+      </div>
+      <div class='form-group centered'>
+        <input type='submit' class='btn btn-md btn-pink' value='Submit' />
+      </div>
+    </form>
+  </div>
+{% endblock %}

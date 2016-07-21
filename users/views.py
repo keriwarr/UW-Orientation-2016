@@ -1,75 +1,119 @@
-import django.contrib.auth.decorators as auth_decorators
-import django.views.decorators.http as http_decorators
-import decorators as custom_decorators
+import json
 
-@http_decorators.require_http_methods(['GET'])
-@auth_decorators.login_required
-@auth_decorators.permission_required('can_view_all_users')
-def users_list(request):
-    """
-    Lists users.  Can only be viewed by those with the permission
-    to view users.
+import django.contrib.auth as auth
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.views import login as django_login_view
+from django.core.exceptions import ValidationError
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from django.template import RequestContext
+from django.views.decorators.http import require_http_methods
 
-    :param request: 'Request' object
-    :return 'Response' object
-    """
-    pass
+from apps.sorting_hat import sorting_hat
+from users.decorators import active_required, require_positions
+from users.forms import CustomUserForm, RegistrationForm
+from users.models import CustomUser
+from users.roles import *
+from users.utils import validate_image
 
-@http_decorators.require_http_methods(['GET', 'POST'])
-@auth_decorators.login_required
-@auth_decorators.permission_required('can_create_user')
-def users_create(request):
-    """
-    View for creating a user model.  Can only be accessed by those
-    with the permission to create users.
 
-    :param request: 'Request' object
-    :return 'Response' object
-    """
-    pass
+@require_http_methods(['GET', 'POST'])
+def login(request):
+    if request.user.is_authenticated():
+        # User is already authenticated, just redirect them to
+        # their profile
+        return redirect('/users/profile')
+    return django_login_view(request)
 
-@http_decorators.require_http_methods(['GET', 'POST'])
-@auth_decorators.login_required
-@custom_decorators.ownership_or_required
-def users_update(request, pk):
-    """
-    View for updating a user model.  Can only be accessed if either the
-    currently logged in user is accessing their own user update page,
-    or the currently logged in user has the permission to edit all
-    information.
+@login_required
+@active_required
+@require_http_methods(['GET', 'POST'])
+def logout(request):
+    if request.user and request.user.is_authenticated():
+        auth.logout(request)
+    return redirect('/users/login')
 
-    :param request: 'Request' object
-    :param pk: Primary key of user to lookup
-    :return 'Response' object
-    """
-    pass
+@login_required
+@active_required
+@require_http_methods(['GET'])
+def profile(request):
+    return redirect('view_team', team_id=request.user.team.id)
 
-@http_decorators.require_http_methods(['GET', 'POST'])
-@auth_decorators.login_required
-@custom_decorators.ownership_or_required
-def users_delete(request, pk):
-    """
-    View for deleting a user model.  Can only be accessed if either the
-    currently logged in user is accessing their own deletion page,
-    or the currently logged int user has the permission to edit all
-    information.
+@login_required
+@active_required
+@require_http_methods(['GET', 'POST'])
+def user_settings(request):
+    context_data = { 'team': request.user.team }
+    instance = request.user
+    if request.method == 'POST':
+        form = CustomUserForm(request.POST, instance=instance)
+        fname = request.FILES.get('photo', None)
+        try:
+            if fname is not None:
+                validate_image(fname)
+                instance.photo = fname
+                instance.save()
+            elif request.POST.get('photo-clear', None) is not None:
+                instance.photo = None
+                instance.save()
+            return redirect('profile')
 
-    :param request: 'Request' object
-    :param pk: Primary key of user to lookup
-    :return 'Response' object
-    """
-    pass
+        except ValidationError as e:
+            if not isinstance(form.non_field_errors, list):
+                form.non_field_errors = []
+            form.non_field_errors.append(' '.join(e.messages))
 
-@http_decorators.require_http_methods(['GET'])
-@auth_decorators.login_required
-@auth_decorators.permission_required('can_view_all_users')
-def users_detail(request, pk):
-    """
-    View for displaying a particular user's information.  Can only be
-    accessed by a user who the permission to view all user information.
+        except Exception as e:
+            if not isinstance(form.non_field_errors, list):
+                form.non_field_errors = []
+            form.non_field_errors.append(str(e))
 
-    :param request: 'Request' object
-    :param pk: Primary key of user to lookup
-    :return 'Response' object
+        context_data['form'] = form
+    else:
+        form = CustomUserForm(instance=instance)
+        context_data['form'] = form
+    return render(request, 'profile/settings.html', context=RequestContext(request, context_data))
+
+@login_required
+@active_required
+@require_positions([FOC, MOD])
+def register(request):
     """
-    pass
+    Returns the view used for a new user to register.  This view is only staff-accessible because we want to limit
+    only staff to being able to sign up new people.  Ideally, this would only be used for signing up those who arrive late
+    to Orientation week / forgot to sign up.
+    """
+    form = RegistrationForm()
+    if request.is_ajax():
+        # If the request is an AJAX request, then we want to handle
+        # the team assignment and return the result as data.
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            user_data = form.cleaned_data
+            user_data['username'] = user_data['username'].lower()
+            user_data['quest_id'] = user_data['username']
+            user = None
+            users = CustomUser.objects.filter(username__exact=user_data['quest_id'])
+            if users.count() > 0:
+                user = users[0]
+            else:
+                user = None
+
+            if user is None or user.team is None:
+                team_assignment = sorting_hat.find_pink_tie_team_assignment(user_data)
+                user_data.pop('quest_id')
+                if user is None:
+                    user = CustomUser(**user_data)
+                else:
+                    user.first_name = user_data['first_name']
+                    user.last_name = user_data['last_name']
+                user.is_active = True
+                user.team = team_assignment
+                user.save()
+            if user.is_first_year:
+                return json_response({ 'valid': True, 'team': user.team.id })
+        return json_response({ 'valid': False })
+    return render(request, 'registration/register.html', context=RequestContext(request, { 'form' : form, 'team': request.user.team }))
+
+def json_response(response_data):
+    return HttpResponse(json.dumps(response_data), content_type="application/json")

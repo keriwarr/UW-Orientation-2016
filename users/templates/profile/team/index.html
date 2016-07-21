@@ -1,0 +1,61 @@
+{% extends "profile/_layout.html" %}
+{% load user_extras %}
+
+{% block title %}
+Edit {{ team.name }} | Math Orientation 2015
+{% endblock %}
+
+{% block content %}
+  <div class='page-content'>
+    <h1>{{ team.name }} - Edit</h1>
+    <div style='margin-top: 10px'>
+      <a href='{% url "edit_team_profile" team_id=team.id %}' class='btn btn-md btn-pink'>Edit Description</a>
+      <a href='{% url "add_team_cheer" team_id=team.id %}' class='btn btn-md btn-pink'>Add Cheer</a>
+    </div>
+    {% if team.profile %}
+      {% with team.profile as profile %}
+        {% if profile.welcome_message %}
+          <hr style='margin: 30px 0px;'/>
+          <div>
+            <h2>Welcome Message:</h2>
+            <p>{% autoescape off %}{{ profile.welcome_message|as_html }}{% endautoescape %}</p>
+          </div>
+        {% endif %}
+        {% if profile.description %}
+          <hr style='margin: 30px 0px;'/>
+          <div>
+            <h2>Description:</h2>
+            <p>{% autoescape off %}{{ profile.description|as_html }}{% endautoescape %}</p>
+          </div>
+        {% endif %}
+        {% if profile.cheers %}
+          <hr style='margin: 30px 0px;'/>
+          <div>
+            <h2>Team Cheers</h2>
+            <ul class='inline'>
+              {% for cheer in profile.cheers.all %}
+                <li class='table cheer'>
+                  <div class='table-cell' style='min-width: 200px; padding-right: 50px;'>{{ cheer.name }}</div>
+                  <div class='table-cell'>
+                    <a href='{% url "edit_team_cheer" team_id=team.id cheer_id=forloop.counter0 %}'
+                       class='btn btn-md btn-pink' style='margin-right: 10px'>Edit</a>
+                    <a href='{% url "delete_team_cheer" team_id=team.id cheer_id=forloop.counter0 %}'
+                       class='btn btn-md btn-pink'>Remove</a>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+        {% if profile.team_video %}
+          <hr style='margin: 30px 0px;'/>
+          <div>
+            <h2>Team Video:</h2>
+            <iframe id='ytplayer' type='text/html' width='340' height='200' frameborder='0'
+                    src='http://www.youtube.com/embed/{{ profile.team_video }}' />
+          </div>
+        {% endif %}
+      {% endwith %}
+    {% endif %}
+  </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "_layout.html" %}
+{% load staticfiles %}
+
+{% block title %}
+Login | Math Orientation 2015
+{% endblock %}
+
+{% block content %}
+  <div class='container centered' style='display: table; height: 90%;'>
+    <div style='vertical-align: middle; display: table-cell;'>
+      <img src='{% static "images/main.png" %}' style='max-width: 50%; height: auto; margin-bottom: 20px;'>
+      {% if form.non_field_errors %}
+        <div>
+          {% for error in form.non_field_errors %}
+            <div style='margin-bottom: 20px;'>
+              <strong>{{ error }}</strong>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      <form class='form' action='{{ request.path }}' method='post' accept-charset='utf-8'>
+        {% csrf_token %}
+        {% for field in form %}
+          <div class='form-group'>
+            <label>{{ field.label }}</label>
+              {% if field.errors %}
+                {{ field.errors }}
+              {% endif %}
+            {{ field }}
+          </div>
+        {% endfor %}
+        <input type='hidden' name='next' value='{{ next }}' />
+        <input class='btn btn-lg' type='submit' value='Submit'/>
+      </form>
+    </div>
+  </div>
+{% endblock %}

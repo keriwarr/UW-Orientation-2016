@@ -1,0 +1,68 @@
+{% extends "_layout.html" %}
+{% load compress %}
+
+{% block title %}
+  Tie Guard Radio
+{% endblock %}
+
+{% block body %}
+  <body>
+    <div class='container'>
+      <form action='/apps/tie-guard-radio/' method='post'>
+        <h2 class='small-caps'>Submit a song request</h2>
+        <hr/>
+        <div class='centered errors'>
+          {% if errors %}
+          {% for error in errors %}
+          <div class='alert alert-danger' role='alert'>
+            <span>Error: </span>{{ error }}
+          </div>
+          {% endfor %}
+          {% endif %}
+        </div>
+        <div class='form-group'>
+          {% csrf_token %}
+          {{ form }}
+        </div>
+        <div class='form-group text-right'>
+          <button type='submit' class='btn btn-lg btn-pink'>Submit</button>
+        </div>
+      </form>
+      {% if queue|length > 0 %}
+        <br/>
+        <hr style='margin: 20px 0px;'/>
+        <br/>
+        <div class='centered'>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th><strong>#</strong></th>
+                <th><strong>Track</strong></th>
+                <th><strong>Artist</strong></th>
+                <th><strong> </strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for song in queue %}
+                <tr class='{% if song == current_song %}current{% endif %}'>
+                  <td>{{ forloop.counter }}</td>
+                  <td>{{ song.name }}</td>
+                  <td>{{ song.artist }}</td>
+                  <td>
+                    <a href='{{ song.open_url }}'>
+                      <img src='{{ STATIC_URL }}images/external_link.png' />
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% endif %}
+      <div class='text-right'>
+        <br/>
+        <span style='font-size: 10px; color: #ccc;'>Powered by Spotify</span>
+      </div>
+    </div>
+  </body>
+{% endblock %}

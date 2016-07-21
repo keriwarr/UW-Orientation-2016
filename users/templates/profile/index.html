@@ -1,0 +1,123 @@
+{% extends "profile/_layout.html" %}
+{% load compress %}
+{% load user_extras %}
+
+{% block title %}
+{{ team.name }} | Math Orientation 2015
+{% endblock %}
+
+{% block javascript %}
+  {% compress js %}
+    <script type='text/javascript' src='{{ STATIC_URL }}javascript/pill.js'></script>
+  {% endcompress %}
+{% endblock %}
+
+{% block stylesheets %}
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+{% endblock %}
+
+{% block content %}
+  <div class='banner'>
+    {% if team and team.banner %}
+      <img src='{{ team.banner }}' alt='banner' />
+    {% endif %}
+  </div>
+  <div class='page-content'>
+    {% if team and team.profile %}
+      {% with team.profile as profile %}
+        <div>
+          <p>Hello <strong>{{ request.user.first_name }}</strong>,</p>
+          {% if profile.welcome_message %}
+            <p>
+              {% autoescape off %}{{ profile.welcome_message|as_html }}{% endautoescape %}
+            </p>
+          {% else %}
+            <p>
+              Welcome to Math Orientation 2015!  We're glad to have you on our amazing team,
+              <span style='color:#ff88dd;'><i>{{ team.name }}</i></span> !  Check out the information
+              below and play games to earn points for the team!
+            </p>
+            <p>
+              <span style='margin-left: 20px'>- {{ team.name }} Leaders
+            </p>
+          {% endif %}
+        </div>
+      {% endwith %}
+      <hr style='margin-top: 50px; margin-bottom: 20px;'/>
+    {% endif %}
+    <div class='pills' data-type='pill' data-target='.pill-body'>
+      <ul class='inline'>
+        {% if team.profile and team.profile.team_video %}
+          <li class='selected'>Welcome Video</li>
+          <li>Team Cheers</li>
+        {% else %}
+          <li class='selected'>Team Cheers</li>
+        {% endif %}
+        <li>Team Leaders</li>
+        <li>Helpful Links</h1>
+      </ul>
+    </div>
+    {% if team.profile and team.profile.team_video %}
+      <div class='pill-body'>
+        <br/>
+        <div class='youtube'>
+          <iframe src='//www.youtube.com/embed/{{ team.profile.team_video }}?autoplay=0&iv_load_policy=3&rel=0'
+                  frameborder='0' allowfullscreen></iframe>
+        </div>
+      </div>
+    {% endif %}
+    <div class='pill-body'>
+      <h2>Team Cheers</h2>
+      {% if team.profile %}
+        {% for cheer in team.profile.cheers.all %}
+          <div class='cheer bordered'>
+            <a class='cheer-name' data-type='dropdown' data-target='#cheer-{{ forloop.counter0 }}'>
+              <strong>Cheer</strong>: <span>{{ cheer.name }}</span>
+            </a>
+            <p class='cheer-body' id='cheer-{{ forloop.counter0 }}' style='display: none'>
+              {% autoescape off %}{{ cheer.text|as_html }}{% endautoescape %}
+            </p>
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class='pill-body'>
+      <h2>Team Leaders</h2>
+      <ul class='inline leader-list'>
+        {% for leader in leaders %}
+          <li class='leader'>
+            {% if leader.photo %}
+              <img src='{{ MEDIA_URL }}{{ leader.photo }}' alt='{{ leader.get_short_name }} photo' />
+              <div class='leader-overlay'>
+                {{ leader.get_short_name }}
+                <br/>
+                {{ leader.position_name }}
+              </div>
+            {% else %}
+              <div class='placeholder'>
+                {{ leader.get_short_name }}
+                <br/>
+                {{ leader.position_name }}
+              </div>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class='pill-body'>
+      <h2>Helpful Links</h2>
+      <div class='bordered'>
+        {% if team.profile %}
+          {% with team.profile as profile %}
+            <h3 style='margin:0;'>Your Group On Social Media:</h3>
+            {% if profile.facebook %}
+              <a href='{{ profile.facebook }}' target='_blank' class='inline-block'>
+                <i class="fa fa-3x fa-facebook-square"></i>
+              </a>
+            {% endif %}
+          {% endwith %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

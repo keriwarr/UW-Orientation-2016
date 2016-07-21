@@ -1,0 +1,38 @@
+{% extends "profile/_layout.html" %}
+{% load compress %}
+{% load md2 %}
+
+{% block title %}
+Announcements
+{% endblock %}
+
+{% block content %}
+  <div class='page-content'>
+    {% if announcements|length == 0 %}
+      <div class='text-center'>
+        <h2>No Announcements</h2>
+      </div>
+    {% else %}
+      {% for announcement in announcements %}
+        <div class='announcement bordered'>
+          <h1>{{ announcement.title }}</h1>
+          {{ announcement.text|markdown:'safe' }}
+        </div>
+        {% if current_page < num_pages %}
+          {% with page=current_page|add:"1" %}
+            <a href='{% url "announcements" %}?page={{ page }}' class='btn btn-lg btn-pink'>Previous</a>
+          {% endwith %}
+        {% endif %}
+        {% if request.user.position == 'F' %}
+          <a href='{% url "edit_announcement" pk=announcement.pk %}' class='btn btn-lg btn-pink'>Edit</a>
+        {% endif %}
+        {% if current_page > 1 %}
+          {% with page=current_page|add:"-1" %}
+            <a href='{% url "announcements" %}?page={{ page }}' class='btn btn-lg btn-pink'>Next</a>
+          {% endwith %}
+        {% endif %}
+        <div class='clear'></div>
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endblock %}
