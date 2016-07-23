@@ -1,7 +1,7 @@
 import json
 import urllib
-from urllib.request import urlopen
-from urllib.parse import urlparse
+from urllib2 import urlopen
+from urllib2 import urlparse
 
 API_URL = 'https://api.spotify.com/'
 VERSION = 'v1'
