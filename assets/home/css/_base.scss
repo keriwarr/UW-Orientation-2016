@@ -28,6 +28,15 @@ h1, h2 {
   text-align: center;
 }
 
+hr {
+  height: 60px;
+  border: none;
+  background-image: url('/assets/home/img/hr.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .muted {
   opacity: 0.6;
 }
