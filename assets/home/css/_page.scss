@@ -33,6 +33,23 @@
   }
 }
 
+#page-logo-container,
+#page-header-title {
+  @media #{$medium-up} {
+    position: relative;
+    height: 100%;
+  }
+}
+
+#page-header-title-content {
+  @media #{$medium-up} {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
 #page-header-title {
   @media #{$medium-up} {
     padding-top: 3rem;
@@ -53,9 +70,16 @@
 
 #page-logo {
   display: block;
-  margin: 1rem auto;
   max-width: 256px;
   max-height: 256px;
+  margin: 0 auto;
+  @media #{$medium-up} {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
 #default-header-title {
   font-family: "TrajanPro3-Regular", "Georgia", "Times New Roman", times, serif;
