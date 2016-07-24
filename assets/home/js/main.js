@@ -1,16 +1,4 @@
 jQuery(function($) {
-
-  function setupPolyAnimations() {
-    lowPolyOnLoad({
-      animate: false
-    });
-
-    $(window).resize(function () {
-      lowPolyOnResize();
-      return true;
-    });
-  }
-
   $('.social-feed-container').socialfeed({
     instagram: {
       accounts: ['@mathorientation'],
@@ -68,9 +56,16 @@ jQuery(function($) {
     }
   });
 
+  new Konami(function() {
+    $('.low-poly svg').remove();
+    lowPolyOnLoad({animate: true});
+    lowPolyOnResize();
+  });
+
   var $header = $('#default-header');
   if ($header.length < 1) {
-    setupPolyAnimations();
+    lowPolyOnLoad();
+    $(window).resize(lowPolyOnResize);
     return;
   }
 
@@ -113,6 +108,7 @@ jQuery(function($) {
     return true;
   }).trigger('resize');
 
-  // Must happen after the resize
-  setupPolyAnimations();
+  // Must happen after the resize event trigger
+  lowPolyOnLoad();
+  $(window).resize(lowPolyOnResize);
 });
