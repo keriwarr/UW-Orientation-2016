@@ -35,12 +35,8 @@ INSTALLED_APPS = (
     'compressor',
     'users',
     'teams',
-    'apps',
     'home',
-    'games',
-    'apps.tie_guard_radio',
     'apps.sorting_hat',
-    'apps.announcements',
 )
 
 # Root urls

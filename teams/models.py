@@ -55,11 +55,8 @@ class Team(models.Model):
     TEAM_TYPES = (
         (PINK_TIE, 'Pink Tie'),
         (BLACK_TIE, 'Black Tie'),
-        (TIE_GUARD, 'Tie Guard'),
-        (TEAMSTER, 'Teamster'),
+        (MOD, 'MOD'),
         (MATHFOC, 'Math FOC'),
-        (MEDIA, 'Media'),
-        (DEVISORS, 'Devisors'),
     )
 
     LOGO_IMAGE_PATH = os.path.join('teams', 'logos')
