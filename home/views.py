@@ -9,9 +9,16 @@ logger = logging.getLogger(__name__)
 
 def index(request):
     data = getData()
-    data.update({
+    news = getNews(limit = 1)
+    latestnews = False
 
+    if 'data' in news and len(news['data']) > 0:
+        latestnews = news['data'][0]
+
+    data.update({
+        'latestnews': latestnews
     })
+
     return render(request, 'home/index.html', context=data)
 
 def news(request):

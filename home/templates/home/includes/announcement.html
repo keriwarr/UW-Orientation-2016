@@ -1,0 +1,48 @@
+{% load youtube_embed %}
+
+<article class="announcement blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <p class="announcement-message linkify">{{ announcement.message }}</p>
+  {% if 'attachments' in announcement %}
+    {% for attachment in announcement.attachments.data %}
+      {% if attachment.type == 'animated_image_share' %}
+        <a class="announcement-attachment" href="{{ attachment.url }}">
+          <img class="thumbnail announcement-thumbnail" src="{{ announcement.link }}" alt="{{ attachment.title }}">
+        </a>
+      {% elif attachment.type == 'video_share_youtube' %}
+        <div class="flex-video widescreen">
+          <iframe width="560" height="315" src="{{ announcement.link|youtube_embed }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      {% elif 'media' in attachment and 'image' in attachment.media %}
+        <a class="announcement-attachment" href="{{ attachment.url }}">
+          <img class="thumbnail announcement-thumbnail" src="{{ attachment.media.image.src }}" alt="{{ attachment.title }}">
+        </a>
+      {% else %}
+        <a href="#" class="announcement-attachment announcement-attachment-other callout">
+          <span class="announcement-attachment-other-title">{{ attachment.title }}</span>
+          Attachment
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  <div class="callout">
+    <ul class="announcement-menu menu simple">
+      <li><a href="https://www.facebook.com/MathOrientation/">Math Orientation</a></li>
+      <li>
+        <a href="{{ announcement.permalink_url }}">
+          <time class="from-now" datetime="{{ announcement.created_time }}"></time>
+        </a>
+      </li>
+      <li>
+        <a href="{{ announcement.permalink_url }}">
+          <i class="fa fa-heart"></i><span class="show-for-sr">Like</span>
+        </a>
+        <a href="{{ announcement.permalink_url }}">
+          <i class="fa fa-comment"></i><span class="show-for-sr">Comment</span>
+        </a>
+        <a href="{{ announcement.permalink_url }}">
+          <i class="fa fa-share"></i><span class="show-for-sr">Share</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</article>

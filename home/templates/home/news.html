@@ -1,61 +1,16 @@
 {% extends "home/layouts/page.html" %}
-{% load youtube_embed %}
 
 {% block content %}
 
 <h2>Latest News</h2>
 
-{% for news_item in page.news %}
-
-<hr>
-
-<article class="announcement blog-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <p class="announcement-message linkify">{{ news_item.message }}</p>
-  {% if 'attachments' in news_item %}
-    {% for attachment in news_item.attachments.data %}
-      {% if attachment.type == 'animated_image_share' %}
-        <a class="announcement-attachment" href="{{ attachment.url }}">
-          <img class="thumbnail announcement-thumbnail" src="{{ news_item.link }}" alt="{{ attachment.title }}">
-        </a>
-      {% elif attachment.type == 'video_share_youtube' %}
-        <div class="flex-video widescreen">
-          <iframe width="560" height="315" src="{{ news_item.link|youtube_embed }}" frameborder="0" allowfullscreen></iframe>
-        </div>
-      {% elif 'media' in attachment and 'image' in attachment.media %}
-        <a class="announcement-attachment" href="{{ attachment.url }}">
-          <img class="thumbnail announcement-thumbnail" src="{{ attachment.media.image.src }}" alt="{{ attachment.title }}">
-        </a>
-      {% else %}
-        <a href="#" class="announcement-attachment announcement-attachment-other callout">
-          <span class="announcement-attachment-other-title">{{ attachment.title }}</span>
-          Attachment
-        </a>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+{% for newsitem in page.news %}
+  <hr>
+  {% include "home/includes/announcement.html" with announcement=newsitem %}
+{% empty %}
   <div class="callout">
-    <ul class="announcement-menu menu simple">
-      <li><a href="https://www.facebook.com/MathOrientation/">Math Orientation</a></li>
-      <li>
-        <a href="{{ news_item.permalink_url }}">
-          <time class="from-now" datetime="{{ news_item.created_time }}"></time>
-        </a>
-      </li>
-      <li>
-        <a href="{{ news_item.permalink_url }}">
-          <i class="fa fa-heart"></i><span class="show-for-sr">Like</span>
-        </a>
-        <a href="{{ news_item.permalink_url }}">
-          <i class="fa fa-comment"></i><span class="show-for-sr">Comment</span>
-        </a>
-        <a href="{{ news_item.permalink_url }}">
-          <i class="fa fa-share"></i><span class="show-for-sr">Share</span>
-        </a>
-      </li>
-    </ul>
+    <p>No news to show at this time. Please try again later</p>
   </div>
-</article>
-
 {% endfor %}
 
 {% endblock %}

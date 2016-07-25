@@ -122,7 +122,8 @@ jQuery(function($) {
   $(window).resize(function () {
     var $announcement = $('#home-announcement-body');
     // +2 to account for border
-    $('#home-social-feed-bounding').height($announcement.height() + 2);
+    var targetHeight = Math.max($announcement.height() + 2, 512);
+    $('#home-social-feed-bounding').height(targetHeight);
     return true;
   }).trigger('resize');
 
