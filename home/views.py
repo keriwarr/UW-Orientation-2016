@@ -60,7 +60,7 @@ def faq(request):
     data = getData()
     data.update({
         'page': {
-            'title': 'FAQ'
+            'title': 'Frequently Asked Questions'
         }
     })
     return render(request, 'home/faq.html', context=data)
