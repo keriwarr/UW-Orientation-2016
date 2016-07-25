@@ -42,7 +42,6 @@ jQuery(function($) {
         var additionalOffset = $(this).data('additional-offset');
         var scrollOffset = targetOffset;
         if (additionalOffset && ~additionalOffset.indexOf('em')) {
-          console.log(em_to_px(additionalOffset));
           scrollOffset -= em_to_px(additionalOffset);
         } else if (additionalOffset && ~additionalOffset.indexOf('px')) {
           scrollOffset += parseFloat(additionalOffset);
@@ -81,8 +80,26 @@ jQuery(function($) {
 
   var $header = $('#default-header');
   if ($header.length < 1) {
+
+    // Make sure the headers are properly sized
+    $(window).resize(function () {
+      if ($(window).width() >= 640) {
+        // No update required
+        $('#page-header').height('');
+        return;
+      }
+      var targetHeight = 30 +
+        $('#page-logo-container').outerHeight() +
+        $('#page-header-title').outerHeight();
+
+      $('#page-header').height(targetHeight);
+    }).trigger('resize');
+
     lowPolyOnLoad();
+
+    // Delayed handler for low-poly resize updater
     $(window).resize(lowPolyOnResize);
+
     return;
   }
 
