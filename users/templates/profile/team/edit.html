@@ -1,0 +1,29 @@
+{% extends "profile/_layout.html" %}
+
+{% block title %}
+Edit {{ team.name }} | Math Orientation 2015
+{% endblock %}
+
+{% block content %}
+  <div class='page-content'>
+    <form class='profile-form' method='POST'>
+      {% csrf_token %}
+      <div class='form-group form-group-bordered'>
+        <h3>Welcome Message:</h3>
+        {{ form.welcome_message }}
+      </div>
+      <div class='form-group form-group-bordered'>
+        <h3>Description:</h3>
+        {{ form.description }}
+      </div>
+      <div class='form-group form-group-bordered'>
+        <h3>Team Video:</h3>
+        <p>Specify the ID of the Youtube video to use as the Team Video.</p>
+        {{ form.team_video }}
+      </div>
+      <div class='form-group centered'>
+        <input type='submit' class='btn btn-md btn-pink' value='Submit' />
+      </div>
+    </form>
+  </div>
+{% endblock %}

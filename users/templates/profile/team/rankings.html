@@ -1,0 +1,52 @@
+{% extends "profile/_layout.html" %}
+{% load user_extras %}
+
+{% block title %}
+Team Rankings | Math Orientation 2015
+{% endblock %}
+
+{% block content %}
+  <div class='page-content'>
+    <h1>Leaderboard</h1>
+    <div class='leaderboard desktop'>
+      {% if rankings and rankings|length >= 3 %}
+        <div class='inline-block rank-1'>
+          <img src='{{ rankings.0.1.logo }}' alt='{{ rankings.0.1.name }}' />
+          <div class='rank-information'>
+            <h2>First Place</h2>
+            <span>{{ rankings.0.1.name }}</span>
+          </div>
+        </div>
+        <div class='inline-block rank-2'>
+          <img src='{{ rankings.1.1.logo }}' alt='{{ rankings.1.1.name }}' />
+          <div class='rank-information'>
+            <h2>Second Place</h2>
+            <span>{{ rankings.1.1.name }}</span>
+          </div>
+        </div>
+        <div class='inline-block rank-3'>
+          <img src='{{ rankings.2.1.logo }}' alt='{{ rankings.2.1.name }}' />
+          <div class='rank-information'>
+            <h2>Third Place</h2>
+            <span>{{ rankings.2.1.name }}</span>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class='rankings'>
+      {% for rank, team in rankings %}
+        <div class='ranking bordered {% if team == request.user.team %}selected{% endif %}'>
+          <div class='image'>
+            <img src='{{ team.logo }}'>
+          </div>
+          <div class='caption'>
+            <h2>{{ team.name }}</h2>
+          </div>
+          <div class='rank'>
+            <span>{{ forloop.counter }}</span>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

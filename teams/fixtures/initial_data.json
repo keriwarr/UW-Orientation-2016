@@ -1,0 +1,1845 @@
+[
+  {
+    "fields": {
+      "profile": 1,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "profile": 1,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "profile": 1,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "profile": 1,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "profile": 1,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "profile": 1,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 6
+  },
+  {
+    "fields": {
+      "profile": 1,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 7
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 8
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 9
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 10
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 11
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 12
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 13
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 14
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 15
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 16
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 17
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 18
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 19
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 20
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 21
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 22
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 23
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 24
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 25
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 26
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 27
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 28
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 29
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 30
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 31
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 32
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 33
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 34
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 35
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 36
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 37
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 38
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 39
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 40
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 41
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 42
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 43
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 44
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 45
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 46
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 47
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 48
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 49
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 50
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 51
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 52
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 53
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 54
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 55
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 56
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 57
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 58
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 59
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 60
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 61
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 62
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 63
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 64
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 65
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 66
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 67
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 68
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 69
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 70
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 71
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 72
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 73
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 74
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 75
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 76
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 77
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 78
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 79
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 80
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 81
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 82
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 83
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 84
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 85
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 86
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 87
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 88
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 89
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 90
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 91
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 92
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 93
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 94
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 95
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 96
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 97
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 98
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 99
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 100
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 101
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 102
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 103
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 104
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 105
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 106
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 107
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 108
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 109
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 110
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 111
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 112
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 113
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 114
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 115
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 116
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 117
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 118
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 119
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "text": "M-A\nM-A-T\nM-A-T-H\nMath Rocks!\n\nSay it loud\nSay it big\nLet it boil in your blood, feel it zag as you zig\nWe survive\nAll the knocks\nWe have pride when we cheer and we think Math Rocks!\n",
+      "last_edited_by": null,
+      "name": "Math Rocks",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 120
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "text": "Water water water!\nLoo loo loo!\nWater water water!\nLoo loo loo!\nWater!\nLoo!\nWater!\nLoo!\nWater water water!\nLoo loo loo!\n",
+      "last_edited_by": null,
+      "name": "Water Water Water",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 121
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "text": "The biggest tie\nI ever saw\nWas hanging from\nThe M3 wall\n\nI looked at it\nAnd then I knew\nI wanted to be\nA Mathie too\n\nI stole the tie\nIt made me laugh\nBecause it's true\nThat I love Math\n\nAnd so began\nMy new journey\nTo be part of\nMath faculty\n\nMy school is sweet\nSWEET LIKE A FOX!\nBecause I know\nUW Math Rocks\n",
+      "last_edited_by": null,
+      "name": "The Biggest Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 122
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "text": "Row, row, row reduce\nMadly down the page.\nOne mistake and you'll be baked\nSo check at every stage.\n",
+      "last_edited_by": null,
+      "name": "Row Row Row Reduce",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 123
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "text": "Sine Sine Cosine Sine\nThree point one four one five nine\n",
+      "last_edited_by": null,
+      "name": "Sine Sine Cosine Sine",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 124
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "text": "Hip Hip Array\nHip Hip Array\nHip Hip Array\n",
+      "last_edited_by": null,
+      "name": "Hip Hip Array",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 125
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "text": "Call&colon; How's the Tie?\n\nTie Guard&colon; Still there, stil pink!\n\nCall&colon; Why oh why?\n\nTie Guard&colon; Are we asked to think?\n\nCall&colon; But we'll survive!\n\nTie Guard&colon; Never gonna sink!\n\nCall&colon; Forty feet high!\n\nTie Guard&colon; Still there, stil pink!\n",
+      "last_edited_by": null,
+      "name": "How's the Tie",
+      "created_by": null
+    },
+    "model": "teams.teamcheer",
+    "pk": 126
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/448585871979237/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1460256667620963/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1600187803546674/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/981384871894488/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/387175518103142/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1600489256892842/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 6
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1685413835020527/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 7
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1600187803546674/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 8
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1603085446631755/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 9
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1140176706009091/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 10
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1600187803546674/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 11
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/472217559606474/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 12
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/660189384116971/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 13
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1623462684604981/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 14
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/829546547099808/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 15
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1600187803546674/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 16
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1517967195116583",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 17
+  },
+  {
+    "fields": {
+      "team_video": "",
+      "last_edited_by": null,
+      "facebook": "https://www.facebook.com/groups/1614184248819602/",
+      "description": "",
+      "welcome_message": ""
+    },
+    "model": "teams.teamprofile",
+    "pk": 18
+  },
+  {
+    "fields": {
+      "profile": 1,
+      "name": "Age of Empires",
+      "banner": "/static/teams/banners/age of empires.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_age of emPIres.jpg",
+      "extra_data": {
+        "reference_video": "3bQ-WsquMwE"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "profile": 2,
+      "name": "Animal Cross Product",
+      "banner": "/static/teams/banners/animal cross product.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_animal crossproduct.jpg",
+      "extra_data": {
+        "reference_video": "u4_ejKRhYMo"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "profile": 3,
+      "name": "Call of Du/Dy",
+      "banner": "",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_call of du-dy.jpg",
+      "extra_data": {},
+      "type": "DV"
+    },
+    "model": "teams.team",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "profile": 4,
+      "name": "Finite Fantasy",
+      "banner": "/static/teams/banners/finite fantasy.jpg",
+      "score": 0,
+      "double_degree": true,
+      "logo": "/static/teams/logos/logos_finite fantasy 1.jpg",
+      "extra_data": {
+        "reference_video": "Kznek1uNVsg"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "profile": 5,
+      "name": "Focet Monsters",
+      "banner": "",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_focet monsters.jpg",
+      "extra_data": {},
+      "type": "MF"
+    },
+    "model": "teams.team",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "profile": 6,
+      "name": "Kerbal Vectorspace Program",
+      "banner": "/static/teams/banners/kerbal vs program.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_kerbal vectorspace program.jpg",
+      "extra_data": {
+        "reference_video": "7kTbo1wmN-w"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 6
+  },
+  {
+    "fields": {
+      "profile": 7,
+      "name": "League of Lemmas",
+      "banner": "/static/teams/banners/league of lemmas.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_league of lemmas 2.jpg",
+      "extra_data": {
+        "reference_video": "j-hXQ1oEn84"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 7
+  },
+  {
+    "fields": {
+      "profile": 8,
+      "name": "Legend of Delta - Four Swords",
+      "banner": "",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_legend of delta.jpg",
+      "extra_data": {},
+      "type": "TG"
+    },
+    "model": "teams.team",
+    "pk": 8
+  },
+  {
+    "fields": {
+      "profile": 9,
+      "name": "Little Big Parameter",
+      "banner": "/static/teams/banners/little big parameter.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_little big parameter.jpg",
+      "extra_data": {
+        "reference_video": "AGzOKbVC2r8"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 9
+  },
+  {
+    "fields": {
+      "profile": 10,
+      "name": "Lnkey Kong",
+      "banner": "/static/teams/banners/lnkey kong.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_ln-key kong.jpg",
+      "extra_data": {
+        "reference_video": "RcP91tQ4ZSM"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 10
+  },
+  {
+    "fields": {
+      "profile": 11,
+      "name": "Mario Chart",
+      "banner": "",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_mario chart.jpg",
+      "extra_data": {},
+      "type": "TS"
+    },
+    "model": "teams.team",
+    "pk": 11
+  },
+  {
+    "fields": {
+      "profile": 12,
+      "name": "Team Racket",
+      "banner": "",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_team racket.jpg",
+      "extra_data": {},
+      "type": "BT"
+    },
+    "model": "teams.team",
+    "pk": 12
+  },
+  {
+    "fields": {
+      "profile": 13,
+      "name": "Super Math Brothers",
+      "banner": "/static/teams/banners/super math bros.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_super math bros.jpg",
+      "extra_data": {
+        "reference_video": "zlz-WOglHgo"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 13
+  },
+  {
+    "fields": {
+      "profile": 14,
+      "name": "Sonic the Hedgelog",
+      "banner": "/static/teams/banners/sonice the hedgelog.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_sonic the hedgelog.jpg",
+      "extra_data": {
+        "reference_video": "Oa2TCaE4MGk"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 14
+  },
+  {
+    "fields": {
+      "profile": 15,
+      "name": "Sinesweeper",
+      "banner": "/static/teams/banners/sinesweeper.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_sinesweeper.jpg",
+      "extra_data": {
+        "reference_video": "LHY8NKj3RKs"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 15
+  },
+  {
+    "fields": {
+      "profile": 16,
+      "name": "Pokemon Snap",
+      "banner": "",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_pokemon snap.jpg",
+      "extra_data": {},
+      "type": "MD"
+    },
+    "model": "teams.team",
+    "pk": 16
+  },
+  {
+    "fields": {
+      "profile": 17,
+      "name": "Omegaman",
+      "banner": "/static/teams/banners/omegaman.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_omegaman.jpg",
+      "extra_data": {
+        "reference_video": "qsIGQTFgMi4"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 17
+  },
+  {
+    "fields": {
+      "profile": 18,
+      "name": "Mortal Kombinatorics",
+      "banner": "/static/teams/banners/mortal kombinatorics.jpg",
+      "score": 0,
+      "logo": "/static/teams/logos/logos_mortal kombinatorics.jpg",
+      "extra_data": {
+        "reference_video": "pSHiY4aRDb0"
+      },
+      "type": "PT"
+    },
+    "model": "teams.team",
+    "pk": 18
+  }
+]

@@ -1,9 +1,21 @@
-from django.conf import url
+from django.conf import settings
+from django.conf.urls import url
+from . import views
 
-urlpatterns = (
-    url(r'^users/$', 'views.users_list'),
-    url(r'^users/add/$', 'views.users_create'),
-    url(r'^users/update/(?P<pk>\d+)?$', 'views.users_update'),
-    url(r'^users/delete/(?P<pk>\d+)?$', 'views.users_delete'),
-    url(r'^users/detail/(?P<pk>\d+)?$', 'views.users_detail'),
-)
+
+urlpatterns = [
+    url(r'^profile', views.profile),
+    url(r'^settings', views.user_settings),
+    url(r'^register', views.register, name='register'),
+]
+
+if settings.ENVIRONMENT == 'development':
+    urlpatterns += [
+        url(r'^login', views.login, name='login'),
+        url(r'^logout', views.logout, name='logout'),
+    ]
+else:
+    urlpatterns += [
+        url(r'^login', 'cas.views.login', name='login'),
+        url(r'^logout', 'cas.views.logout', name='logout'),
+    ]

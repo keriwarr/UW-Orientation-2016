@@ -1,0 +1,4 @@
+PINK_TIE = 'PT'
+BLACK_TIE = 'BT'
+MOD = 'MO'
+MATHFOC = 'MF'

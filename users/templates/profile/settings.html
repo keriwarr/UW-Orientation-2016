@@ -1,0 +1,48 @@
+{% extends "profile/_layout.html" %}
+{% load user_extras %}
+
+{% block title %}
+Settings | {{ request.user.first_name }} {{ request.user.last_name }} | Math Orientation 2015
+{% endblock %}
+
+{% block content %}
+  <div class='page-content'>
+    <form class='settings-form' method='POST' enctype='multipart/form-data' action=''>
+      {% csrf_token %}
+      {% if form.non_field_errors %}
+        {% for error in form.non_field_errors %}
+          <div class='bg bg-danger' style='margin-bottom: 5px;'>{{ error }}</div>
+        {% endfor %}
+      {% endif %}
+      <div class='form-group form-group-bordered'>
+        <h3>Username:</h3>
+        {{ form.username }}
+      </div>
+      <div class='form-group form-group-bordered'>
+        <h3>First Name:</h3>
+        {{ form.first_name }}
+      </div>
+      <div class='form-group form-group-bordered'>
+        <h3>Last Name:</h3>
+        {{ form.last_name }}
+      </div>
+      <div class='form-group form-group-bordered'>
+        <h3>Team:</h3>
+        <input class='form-input' type='text' value='{{ form.instance.team.name }}' readonly />
+      </div>
+      <div class='form-group form-group-bordered'>
+        <h3>Position:</h3>
+        <input class='form-input' type='text' value='{{ form.instance.position_name }}' readonly />
+      </div>
+      <div class='block' style='margin-top: 30px;'>
+        <h3>Photo:</h3>
+        {{ form.photo }}
+      </div>
+      <br/>
+      <br/>
+      <div class='form-group centered'>
+        <input type='submit' class='btn btn-md btn-pink' value='Submit' />
+      </div>
+    </form>
+  </div>
+{% endblock %}
