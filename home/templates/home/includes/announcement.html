@@ -17,7 +17,7 @@
           <img class="thumbnail announcement-thumbnail" src="{{ attachment.media.image.src }}" alt="{{ attachment.title }}">
         </a>
       {% else %}
-        <a href="#" class="announcement-attachment announcement-attachment-other callout">
+        <a href="{{ attachment.url }}" class="announcement-attachment announcement-attachment-other callout">
           <span class="announcement-attachment-other-title">{{ attachment.title }}</span>
           Attachment
         </a>
