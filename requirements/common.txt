@@ -1,8 +1,10 @@
 Django == 1.9.7
 django_compressor == 2.0
 django-cas-client == 1.2.0
+django-dotenv == 1.4.1
 django-jsonfield >= 0.9.15
 django-libsass == 0.7
 django-markdown2
 Pillow == 2.8.2
 pyyaml == 3.11
+requests == 2.9.1

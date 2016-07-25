@@ -47,3 +47,21 @@ python manage.py runserver
 ```
 
 This will boot up the server at http://127.0.0.1:8000/.
+
+## Deployment
+
+### Environment setup
+
+You'll need to create a `.env` file on the production server before deploying
+for the first time. Use this template:
+
+```
+DJANGO_ENVIRONMENT=production
+SECRET_KEY=<Django Secret Key>
+FACEBOOK_APP_ID=<Facebook App ID>
+FACEBOOK_APP_SECRET=<Facebook App Secret>
+```
+
+### Asset Compilation
+
+TODO

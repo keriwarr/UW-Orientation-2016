@@ -56,6 +56,23 @@ jQuery(function($) {
     }
   });
 
+  $('.linkify').linkify({
+    format: function (value, type) {
+      if (type === 'url') {
+        value = value.replace(/^(https?:\/\/)?(www\.)?/g, '');
+        if (value.length > 50) {
+          value = value.slice(0, 50) + '…';
+        }
+      }
+      return value;
+    }
+  });
+
+  $('time.from-now').each(function (i, time) {
+    var $time = $(time);
+    $time.text(moment($time.attr('datetime')).fromNow());
+  });
+
   new Konami(function() {
     $('.low-poly svg').remove();
     lowPolyOnLoad({animate: true});
@@ -69,7 +86,8 @@ jQuery(function($) {
     return;
   }
 
-  // Home page scripts
+  /******** Home page animations *********/
+
   // This prevents a sudden change in size for the background hero image
   $('#default-header-bg-container').fadeIn(50)
 
@@ -93,10 +111,10 @@ jQuery(function($) {
     Cookies.set('seenHomeAnimation', 'true');
   }, 6 * homeAnimationDelay);
 
+
   setTimeout(function () {
-    // Disable animation after the initial animation
-    //  to avoid "laggy" feeling on iOS when the address
-    //  bar hides when srolling.
+    // Disable animation after the initial animation to avoid "laggy" feeling on
+    // iOS when the address bar hides during scrolling.
     $header.addClass('no-transition');
   }, 8 * homeAnimationDelay);
 

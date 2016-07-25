@@ -1,30 +1,61 @@
 {% extends "home/layouts/page.html" %}
+{% load youtube_embed %}
 
 {% block content %}
-<article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
-  <h3>Awesome blog post title</h3>
-  <img class="thumbnail" src="http://placehold.it/850x350">
-  <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+
+<h2>Latest News</h2>
+
+{% for news_item in page.news %}
+
+<hr>
+
+<article class="announcement blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <p class="announcement-message linkify">{{ news_item.message }}</p>
+  {% if 'attachments' in news_item %}
+    {% for attachment in news_item.attachments.data %}
+      {% if attachment.type == 'animated_image_share' %}
+        <a class="announcement-attachment" href="{{ attachment.url }}">
+          <img class="thumbnail announcement-thumbnail" src="{{ news_item.link }}" alt="{{ attachment.title }}">
+        </a>
+      {% elif attachment.type == 'video_share_youtube' %}
+        <div class="flex-video widescreen">
+          <iframe width="560" height="315" src="{{ news_item.link|youtube_embed }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+      {% elif 'media' in attachment and 'image' in attachment.media %}
+        <a class="announcement-attachment" href="{{ attachment.url }}">
+          <img class="thumbnail announcement-thumbnail" src="{{ attachment.media.image.src }}" alt="{{ attachment.title }}">
+        </a>
+      {% else %}
+        <a href="#" class="announcement-attachment announcement-attachment-other callout">
+          <span class="announcement-attachment-other-title">{{ attachment.title }}</span>
+          Attachment
+        </a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
   <div class="callout">
-    <ul class="menu simple">
-      <li><a href="#">Author: Mike Mikers</a></li>
-      <li><a href="#">Date: 3/6/2015</a></li>
-      <li><a href="#">Comments: 3</a></li>
+    <ul class="announcement-menu menu simple">
+      <li><a href="https://www.facebook.com/MathOrientation/">Math Orientation</a></li>
+      <li>
+        <a href="{{ news_item.permalink_url }}">
+          <time class="from-now" datetime="{{ news_item.created_time }}"></time>
+        </a>
+      </li>
+      <li>
+        <a href="{{ news_item.permalink_url }}">
+          <i class="fa fa-heart"></i><span class="show-for-sr">Like</span>
+        </a>
+        <a href="{{ news_item.permalink_url }}">
+          <i class="fa fa-comment"></i><span class="show-for-sr">Comment</span>
+        </a>
+        <a href="{{ news_item.permalink_url }}">
+          <i class="fa fa-share"></i><span class="show-for-sr">Share</span>
+        </a>
+      </li>
     </ul>
   </div>
 </article>
 
-<div class="row column">
-  <ul class="pagination" role="navigation" aria-label="Pagination">
-    <li class="disabled">Previous</li>
-    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-    <li><a href="#" aria-label="Page 2">2</a></li>
-    <li><a href="#" aria-label="Page 3">3</a></li>
-    <li><a href="#" aria-label="Page 4">4</a></li>
-    <li class="ellipsis"></li>
-    <li><a href="#" aria-label="Page 12">12</a></li>
-    <li><a href="#" aria-label="Page 13">13</a></li>
-    <li><a href="#" aria-label="Next page">Next</a></li>
-  </ul>
-</div>
+{% endfor %}
+
 {% endblock %}

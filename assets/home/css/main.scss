@@ -3,14 +3,15 @@
 @include foundation-everything;
 
 // Base styles
-@import "navigation";
 @import "base";
 @import "default";
 @import "page";
-@import "faq";
+@import "navigation";
 
 // Page-specific styles
 @import "about";
+@import "news";
+@import "faq";
 
 .social-feed-element-profile-image {
   width: 3.5rem;

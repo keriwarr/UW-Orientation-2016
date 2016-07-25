@@ -21,6 +21,7 @@
     "social-feed": "~0.1.2",
     "foundation-sites": "^6.2.3",
     "font-awesome": "^4.6.3",
-    "konami-js": "^1.4.2"
+    "konami-js": "^1.4.2",
+    "linkifyjs": "^2.0.5"
   }
 }

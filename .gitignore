@@ -13,7 +13,7 @@
 
 # Per Deployment and Secret Files
 secret_key.txt
-.env.json
+.env
 
 .DS_Store
 
