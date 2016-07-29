@@ -1,0 +1,34 @@
+.announcement-message {
+  &:first-line {
+    font-size: 150%;
+  }
+}
+
+.announcement-thumbnail {
+  max-height: 384px;
+}
+
+.announcement-menu {
+  @include menu-separators;
+}
+
+.announcement-attachment-other {
+  display: block;
+  padding: 1rem;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 97% 1rem;
+  background-image: url('/assets/home/img/paperclip.svg');
+  > :first-child {
+    margin-top: 4rem;
+  }
+}
+
+.announcement-attachment-other-title {
+  font-size: 3rem;
+  display: block;
+
+  @media #{$medium-up} {
+    width: 67%;
+  }
+}

@@ -112,10 +112,10 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
   small: (
-    'h1': 24,
-    'h2': 20,
-    'h3': 19,
-    'h4': 18,
+    'h1': 36,
+    'h2': 30,
+    'h3': 23,
+    'h4': 19,
     'h5': 17,
     'h6': 16,
   ),
@@ -640,4 +640,28 @@ $parchment-color-dark: #e7c5a3;
     height: $size;
     background-repeat: repeat-x;
     background-size: $size $size;
+}
+
+@mixin menu-separators {
+  &, &.simple {
+    > li {
+      margin-right: 0;
+      &:after {
+        content: "◆";
+        display: block;
+        float: left;
+        line-height: inherit;
+        color: $secondary-color;
+        // margin-left: 1rem;
+      }
+      &:last-child:after {
+        display: none;
+      }
+      > *, > a,  {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        float: left;
+      }
+    }
+  }
 }

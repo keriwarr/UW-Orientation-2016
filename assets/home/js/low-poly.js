@@ -159,6 +159,7 @@ function onResize() {
   colorizePolygonTimeouts.map(clearTimeout);
   colorizePolygonTimeouts = [];
   onLoad();
+  return true;
 }
 
 window.lowPolyOnLoad = onLoad;

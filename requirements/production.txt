@@ -1,3 +1,2 @@
 -r common.txt
 mysql-python
-hg+https://bitbucket.org/cpcc/django-cas

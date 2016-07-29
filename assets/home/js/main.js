@@ -1,16 +1,4 @@
 jQuery(function($) {
-
-  function setupPolyAnimations() {
-    lowPolyOnLoad({
-      animate: false
-    });
-
-    $(window).resize(function () {
-      lowPolyOnResize();
-      return true;
-    });
-  }
-
   $('.social-feed-container').socialfeed({
     instagram: {
       accounts: ['@mathorientation'],
@@ -54,7 +42,6 @@ jQuery(function($) {
         var additionalOffset = $(this).data('additional-offset');
         var scrollOffset = targetOffset;
         if (additionalOffset && ~additionalOffset.indexOf('em')) {
-          console.log(em_to_px(additionalOffset));
           scrollOffset -= em_to_px(additionalOffset);
         } else if (additionalOffset && ~additionalOffset.indexOf('px')) {
           scrollOffset += parseFloat(additionalOffset);
@@ -68,13 +55,56 @@ jQuery(function($) {
     }
   });
 
+  $('.linkify').linkify({
+    format: function (value, type) {
+      if (type === 'url') {
+        value = value.replace(/^(https?:\/\/)?(www\.)?/g, '');
+        if (value.length > 50) {
+          value = value.slice(0, 50) + '…';
+        }
+      }
+      return value;
+    }
+  });
+
+  $('time.from-now').each(function (i, time) {
+    var $time = $(time);
+    $time.text(moment($time.attr('datetime')).fromNow());
+  });
+
+  new Konami(function() {
+    $('.low-poly svg').remove();
+    lowPolyOnLoad({animate: true});
+    lowPolyOnResize();
+  });
+
   var $header = $('#default-header');
   if ($header.length < 1) {
-    setupPolyAnimations();
+
+    // Make sure the headers are properly sized
+    $(window).resize(function () {
+      if ($(window).width() >= 640) {
+        // No update required
+        $('#page-header').height('');
+        return;
+      }
+      var targetHeight = 30 +
+        $('#page-logo-container').outerHeight() +
+        $('#page-header-title').outerHeight();
+
+      $('#page-header').height(targetHeight);
+    }).trigger('resize');
+
+    lowPolyOnLoad();
+
+    // Delayed handler for low-poly resize updater
+    $(window).resize(lowPolyOnResize);
+
     return;
   }
 
-  // Home page scripts
+  /******** Home page animations *********/
+
   // This prevents a sudden change in size for the background hero image
   $('#default-header-bg-container').fadeIn(50)
 
@@ -98,10 +128,10 @@ jQuery(function($) {
     Cookies.set('seenHomeAnimation', 'true');
   }, 6 * homeAnimationDelay);
 
+
   setTimeout(function () {
-    // Disable animation after the initial animation
-    //  to avoid "laggy" feeling on iOS when the address
-    //  bar hides when srolling.
+    // Disable animation after the initial animation to avoid "laggy" feeling on
+    // iOS when the address bar hides during scrolling.
     $header.addClass('no-transition');
   }, 8 * homeAnimationDelay);
 
@@ -109,10 +139,12 @@ jQuery(function($) {
   $(window).resize(function () {
     var $announcement = $('#home-announcement-body');
     // +2 to account for border
-    $('#home-social-feed-bounding').height($announcement.height() + 2);
+    var targetHeight = Math.max($announcement.height() + 2, 512);
+    $('#home-social-feed-bounding').height(targetHeight);
     return true;
   }).trigger('resize');
 
-  // Must happen after the resize
-  setupPolyAnimations();
+  // Must happen after the resize event trigger
+  lowPolyOnLoad();
+  $(window).resize(lowPolyOnResize);
 });

@@ -24,6 +24,9 @@ SECRET_KEY = '5lz6p5t-azm07&g9^km69he2y*l6=&4@o)rsnx(8^_@8h^)-q#'
 DEBUG = True
 ALLOWED_HOSTS = []
 
+FACEBOOK_APP_ID='577732679064679'
+FACEBOOK_APP_SECRET='82761d46c62e3d38a74bb99b82d1dbc5'
+
 # Application definition
 INSTALLED_APPS = (
     'django.contrib.admin',

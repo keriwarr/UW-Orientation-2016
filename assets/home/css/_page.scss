@@ -1,12 +1,8 @@
 #page-header {
   position: relative;
-  height: 25rem;
+  height: 23rem;
   background-color: $primary-color;
   background: radial-gradient(ellipse at center, $primary-color 0%, darken($primary-color, 25%) 100%);
-
-  @media #{$medium-up} {
-    height: 20rem;
-  }
 }
 
 #page-header-bg-container,
@@ -18,7 +14,7 @@
   left: 0;
 }
 
-#page-header-content {
+#page-header-title {
   margin-bottom: 0;
   color: white;
   a, a:hover, a:active, a:visited {
@@ -68,15 +64,17 @@
   }
 }
 
-#page-logo {
+#page-logo-link {
   display: block;
+  width: 100%;
   max-width: 256px;
   max-height: 256px;
-  margin: 0 auto;
+  margin: 1rem auto;
   @media #{$medium-up} {
     position: absolute;
     left: 50%;
     top: 50%;
+    margin: 0 auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
