@@ -19,3 +19,4 @@ secret_key.txt
 
 /assets/CACHE
 /assets/vendor
+/venv
